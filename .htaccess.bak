@@ -1,0 +1,19 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+Redirect 301 /portfolio/stories/landslide/ /weblog/landslide/
+Redirect 301 /portfolio/collections/children/ /weblog/children/
+Redirect 301 /portfolio/stories/high-heels /weblog/high-heel-race/
+Redirect 301 /portfolio/stories/blokada /weblog/blokada/
+Redirect 301 /portfolio/stories/hunger-strike /weblog/hunger-strike/
+Redirect 301 /portfolio/collections/weddings/ /weblog/weddings/
+Redirect 301 /portfolio/collections/corporate/ /weblog/corporate/
+</IfModule>
+
+# END WordPress

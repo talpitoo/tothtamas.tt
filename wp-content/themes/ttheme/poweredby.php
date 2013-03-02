@@ -1,0 +1,1 @@
+﻿powered by <a href="https://plus.google.com/106827193783314871767?rel=author" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/googleplus']);">Tamás Tóth</a> and <a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">WordPress</a>
