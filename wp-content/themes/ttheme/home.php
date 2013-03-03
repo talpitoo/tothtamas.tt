@@ -40,7 +40,7 @@ jQuery(function($){
 	slides 				:  	[		//Slideshow Images
 	<?php $query = array('tag' => 'featured', 'posts_per_page' => -1); query_posts($query); while ( have_posts() ) : the_post(); ?>
 	{image : '<?php $image = get_post_meta($post->ID, 'image', $single = true); echo $image; ?>',
-	title: '<h1><?php the_title(); ?></h1><p><?php remove_filter( 'the_content', 'wpautop' ); the_content(); ?></p>'}
+	title: '<h2><?php the_title(); ?></h2><p><?php remove_filter( 'the_content', 'wpautop' ); the_content(); ?></p>'}
 	<?php
 		if (($wp_query->current_post) < ($wp_query->post_count-1)) {
 		echo ',';

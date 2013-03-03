@@ -28,7 +28,7 @@ body { background:#111; }
 		#controls { text-align:left; z-index:5; padding:0; }
 			#slidecounter { float:left; color:#888; font-size:23px; font-weight:bold; text-shadow:#000 0 -1px 0; margin:19px 10px 18px 20px; }
 			#slidecaption { color:#FFF; margin: 0 0 50px 25px;}
-			#slidecaption  h1{ font-size:19px; font-weight: 600; text-transform: uppercase; margin: 0 0 15px 0;}
+			#slidecaption  h2{ font-size:19px; font-weight: 600; text-transform: uppercase; margin: 0 0 15px 0; line-height: 1;}
 			#slidecaption  p { font-size:12px; color:#FFF; line-height: 15px;}
 			#slidecaption  a { text-decoration: none; color: #fff; border-bottom: 1px dotted;}
 			#slidecaption  a:hover { border: none;}
