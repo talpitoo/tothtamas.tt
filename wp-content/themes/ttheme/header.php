@@ -9,6 +9,7 @@
 	 * Print the <title> tag based on what is being viewed.
 	 */
 	global $page, $paged;
+	$version = "?v2.0";
 
 	wp_title( '|', true, 'right' );
 
@@ -26,8 +27,8 @@
 <style type="text/css" media="screen">
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600&subset=latin,cyrillic);
 @import url( <?php bloginfo('template_url'); ?>/css/bootstrap.css );
-@import url( <?php bloginfo('template_url'); ?>/css/supersized.css );
-@import url( <?php bloginfo('stylesheet_url');?> );
+@import url( <?php bloginfo('template_url'); ?>/css/supersized.css<?php echo $version ?> );
+@import url( <?php bloginfo('stylesheet_url');?><?php echo $version ?> );
 </style>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
@@ -38,12 +39,12 @@
 	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script('custom', TTBLOG_JS . '/bootstrap-collapse.js');
-	wp_enqueue_script('custom', TTBLOG_JS . '/custom.js');
+	//wp_enqueue_script('custom', TTBLOG_JS . '/custom.js', '', $version);
 	if (is_home()) {
 		wp_enqueue_script('supersized', TTBLOG_JS . '/supersized.3.1.3.js');
 	}
 	if (is_category('Portfolio')) {
-		wp_enqueue_script('custom-portfolio', TTBLOG_JS . '/custom-portfolio.js');
+		wp_enqueue_script('custom-portfolio', TTBLOG_JS . '/custom-portfolio.js', '', $version);
 	}
 ?>
 <?php
