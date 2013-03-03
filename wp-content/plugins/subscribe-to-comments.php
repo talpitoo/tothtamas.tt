@@ -22,10 +22,12 @@ function show_subscription_checkbox ($id='0') {
 <?php /* This is the text that is displayed for users who are NOT subscribed */ ?>
 <?php /* ------------------------------------------------------------------- */ ?>
 
-	<p <?php if ($sg_subscribe->clear_both) echo 'style="clear: both;" '; ?>class="subscribe-to-comments">
-	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" <?php if ( $checked_status ) echo 'checked="checked" '; ?>/>
-	<label for="subscribe"><?php echo $sg_subscribe->not_subscribed_text; ?></label>
-	</p>
+	<div <?php if ($sg_subscribe->clear_both) echo 'style="clear: both;" '; ?>class="subscribe-to-comments control-group">
+		<div class="controls">
+			<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" <?php if ( $checked_status ) echo 'checked="checked" '; ?>/>
+			<label for="subscribe"><?php echo $sg_subscribe->not_subscribed_text; ?></label>
+		</div>
+	</div>
 
 <?php /* ------------------------------------------------------------------- */ ?>
 
@@ -35,20 +37,24 @@ function show_subscription_checkbox ($id='0') {
 <?php /* This is the text that is displayed for the author of the post */ ?>
 <?php /* ------------------------------------------------------------- */ ?>
 
-	<p <?php if ($sg_subscribe->clear_both) echo 'style="clear: both;" '; ?>class="subscribe-to-comments">
-	<?php echo str_replace('[manager_link]', $sg_subscribe->manage_link($email, true, false), $sg_subscribe->author_text); ?>
-	</p>
+	<div <?php if ($sg_subscribe->clear_both) echo 'style="clear: both;" '; ?>class="subscribe-to-comments control-group">
+		<div class="controls">
+			<?php echo str_replace('[manager_link]', $sg_subscribe->manage_link($email, true, false), $sg_subscribe->author_text); ?>
+		</div>
+	</div>
 
 <?php else : ?>
 
 <?php /* --------------------------------------------------------------- */ ?>
 <?php /* This is the text that is displayed for users who ARE subscribed */ ?>
 <?php /* --------------------------------------------------------------- */ ?>
-
-	<p <?php if ($sg_subscribe->clear_both) echo 'style="clear: both;" '; ?>class="subscribe-to-comments">
-	<?php echo str_replace('[manager_link]', $sg_subscribe->manage_link($email, true, false), $sg_subscribe->subscribed_text); ?>
-	</p>
-
+	
+	<div <?php if ($sg_subscribe->clear_both) echo 'style="clear: both;" '; ?>class="subscribe-to-comments control-group">
+		<div class="controls">
+			<?php echo str_replace('[manager_link]', $sg_subscribe->manage_link($email, true, false), $sg_subscribe->subscribed_text); ?>
+		</div>
+	</div>
+	
 <?php /* --------------------------------------------------------------- */ ?>
 
 <?php endif;
@@ -76,18 +82,27 @@ if ( !$sg_subscribe->current_viewer_subscription_status() ) :
 <?php /* This is the text that is displayed for users who are NOT subscribed */ ?>
 <?php /* ------------------------------------------------------------------- */ ?>
 
-	<form action="" method="post">
+	<form action="" method="post" class="form-horizontal">
 	<input type="hidden" name="solo-comment-subscribe" value="solo-comment-subscribe" />
 	<input type="hidden" name="postid" value="<?php echo (int) $id; ?>" />
 	<input type="hidden" name="ref" value="<?php echo urlencode('http://' . $_SERVER['HTTP_HOST'] . attribute_escape($_SERVER['REQUEST_URI'])); ?>" />
 
 	<p class="solo-subscribe-to-comments">
 	<?php _e('Subscribe without commenting', 'subscribe-to-comments'); ?>
-	<br />
-	<label for="solo-subscribe-email"><?php _e('E-Mail:', 'subscribe-to-comments'); ?>
-	<input type="text" name="email" id="solo-subscribe-email" size="22" value="<?php echo $user_email; ?>" /></label>
-	<input type="submit" name="submit" value="<?php _e('Subscribe', 'subscribe-to-comments'); ?>" />
 	</p>
+	
+	<div class="control-group">
+		<label for="solo-subscribe-email"><?php _e('E-Mail:', 'subscribe-to-comments'); ?>
+		<div class="controls">
+			<input type="text" name="email" id="solo-subscribe-email" size="22" value="<?php echo $user_email; ?>" /></label>
+		</div>
+	</div>
+	
+	<div class="control-group">
+		<div class="controls">
+			<input type="submit" name="submit" value="<?php _e('Subscribe', 'subscribe-to-comments'); ?>" />
+		</div>
+	</div>
 	</form>
 
 <?php /* ------------------------------------------------------------------- */ ?>

@@ -63,7 +63,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-#mainpage {margin-left: 192px;}
 .clearAll {clear: both;}
 .posRight {float: right;}
 .posLeft {float: left;}
@@ -105,27 +104,15 @@ a:hover {
 /* ################################################################
 # HEADER STYLING
 ################################################################ */
-#header {
-	top: 0;
-	height: 100%;
-	left: -114px;
-	padding-left: 114px;
-	width: 192px !important; /*IE9 fix*/
-	position: fixed;
-}
-#logo {
-	position: fixed;
-	top: 25px !important;
-	left: 25px;
-	z-index: 999;
-	width: 160px;
-}
-#logo a {
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover {
 	text-indent: -9999px;
-	width: 160px;
-	height: 40px;
-	display: block;
-	background: transparent url(images/logo.png) no-repeat left top;
+	width: 190px;
+	height: 78px;
+	padding: 0;
+	margin: 0;
+	background: black url(images/logo.png) no-repeat 20px center;
 }
 .bloginfo-description,
 .bloginfo-description a {
@@ -137,49 +124,54 @@ a:hover {
 }
 
 .triangle {
-	background: transparent url(images/triangle.png) no-repeat right top;
-	height: 125px;
+	background: transparent url(images/triangle-horizontal.png) no-repeat left bottom;
+	height: 78px;
+	width: 30px;
+	float: left;
 }
 .stretch {
 	width: 210px;
 	background: transparent url(images/slider-bg.png) repeat-y right top;
 }
-.perforation {
-	height: 213px;
-	background: transparent url(images/perforation.png) no-repeat right bottom;
+.navbar {
+	background: transparent;
+	padding: 0;
 }
-#menu  {
+.navbar-toggle,
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+	border: none;
+	background-color: transparent;
+	top: 25px;
+	right: 20px;
 }
-#menu ul {
-	width: 138px;
-	padding: 0px 20px 10px 34px;
+.navbar-toggle:hover .icon-bar,
+.navbar-toggle:focus .icon-bar {
+	background-color: #333;
 }
-#menu ul li {
-	position: relative;
-	list-style: none;
-	padding: 25px 0 14px 0px;
-	text-align: right;
-	border-bottom: 1px solid #222;
+.nav-collapse.collapse {
+    overflow: hidden !important;
+	background: transparent url(images/perforation-horizontal.png) no-repeat right bottom;
 }
-#menu ul li.first {
-	padding-top: 0;
+.navbar .nav{
+    float: none;
+	margin: 0 221px 0 0;
+	background: black;
 }
-#menu ul li a {
+ul.nav li a {
 	font-weight: 600;
 	text-transform: uppercase;
 	border: none;
 	font-size: 19px;
-	display: block;
-	/*z-index: 300;*/
 	color: #fff;
+	padding: 0 15px !important;
+	height: 78px;
+	line-height: 78px !important;
+	display: inline-block;
 }
-#menu ul li a:hover {
+ul.nav li a:hover {
 	color: #c3c2c2;
 }
-#menu ul li a:active {
-	outline: none;
-}
-
 
 /* ################################################################
 # PAGE STYLING
@@ -760,4 +752,72 @@ h2.connect span {
 }
 .simplesocialbutton.ssb-button-fblike {
 	margin-right: 30px;
+}
+
+
+@media (max-width: 767px) {
+	.triangle {
+		display: none;
+	}
+	.navbar-brand,
+	.navbar-brand:hover,
+	.navbar-brand:focus	{
+		max-width: none;
+		width: 100%;
+	}
+	.navbar .nav {
+		float: none;
+		margin: 0;
+		background: transparent;
+		padding: 0 0 60px 0;
+	}
+	.navbar .nav li {
+		background: black;
+	}
+	.navbar .nav li a {
+		height: auto;
+		line-height: normal !important;
+		padding: 5px 32px !important;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 979px) {	
+	.navbar-brand,
+	.navbar .nav,
+	.navbar .nav > li {
+		float: none;
+	}
+	.navbar-toggle {
+		position: absolute;
+		display: block;
+	}
+	.nav-collapse.collapse {
+		height: 0 !important;
+	}
+	.nav-collapse.collapse.in {
+		height: auto !important;
+	}
+	.triangle {
+		display: none;
+	}
+	.navbar-brand,
+	.navbar-brand:hover,
+	.navbar-brand:focus	{
+		max-width: none;
+		width: 100%;
+	}
+	.navbar .nav {
+		margin: 0;
+		background: transparent;
+		padding: 0 0 60px 0;
+	}
+	.navbar .nav li {
+		background: black;
+	}
+	.navbar .nav li a {
+		height: auto;
+		line-height: normal !important;
+		padding: 5px 32px !important;
+	}
 }
