@@ -23,13 +23,11 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
     <h3>Related posts</h3>
     <?php while ($related->have_posts()) : $related->the_post(); ?>
     <div class="media">
-      <a href=""
-        <?php the_permalink(); ?>" class="noborder pull-left">
+      <a href="<?php the_permalink(); ?>" class="noborder pull-left">
         <?php the_post_thumbnail('thumbnail'); ?>
       </a>
       <div class="media-body">
-        <a href=""
-          <?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class=""><?php the_title(); ?> (<?php comments_number('0','1','%'); ?>)
+        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class=""><?php the_title(); ?> (<?php comments_number('0','1','%'); ?>)
         </a>
         <br />
         <?php the_time('Y-m-d'); ?>

@@ -12,6 +12,7 @@ a { color: #c3c2c2; border-bottom: 1px dotted #c3c2c2; }
 p, .blog_post .post_thumbnail, blockquote { margin-bottom: 20px; }
 .query { color: #c3c2c2; }
 .noborder, a.noborder:hover { border: none !important; }
+.lowercase { text-transform: lowercase; font-weight: normal;}
 
 /* navbar */
 .navbar { background: transparent; padding: 0; }
@@ -40,7 +41,7 @@ ul.nav li a { font-weight: 600; text-transform: uppercase; border: none; font-si
 
 /* grid adjust */
 .container { max-width: 940px; padding: 40px 20px 20px 20px; margin: 40px auto; background-color: #101010; }
-.single .container, .search .container, .bio .container { padding: 40px 20px 20px 30px;}
+.single .container, .search .container { padding: 40px 20px 20px 30px; }
 [class^="span"] { padding-left: 20px; padding-right: 20px; }
 
 /* page */
@@ -143,7 +144,7 @@ a:hover .l-submit { color: #b5000; }
 
 /********* TEXT STYLING *********/
 h1, h2, h3, h4, h5, h6 { text-transform: uppercase; font-weight: 600; margin-top: 0; }
-.weblog h1, .search h1 { margin-bottom: 40px; }
+.weblog h1, .search h1, .contact h1 { margin-bottom: 40px; }
 #sidebar .section { margin-bottom: 40px; }
 .bio h1 a, .bio h2 a, .bio h3 a, .contact h1 a, .contact h2 a, .contact h3 a, h2.connect a { color: #fff; }
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, h2.connect a:hover { color: #c3c2c2; }
@@ -182,9 +183,12 @@ blockquote { padding-left: 36px; min-height: 19px; border: none; background: url
 .alignright { float: right; margin: 0 0 4px 14px; }
 
 /**** CONTACT ****/
-.contact #content { width: 660px; float: none; padding-bottom: 20px; }
 .bio h2.connect { padding-bottom: 40px; }
+.bio .blog_post { margin-left: 10px; }
+.contact h2, .portfolio h2 { font-size: 14px; margin-bottom: 5px; line-height: 1; }
 .contact img, .weblog img, .portfolio ul li img { border: 1px solid #2e2e2e; }
+.contact img { margin-bottom: 20px;}
+.contact .post_thumbnail img { margin-bottom: 40px; width: 100%;}
 .portfolio ul { margin: 0 !important; }
     .portfolio ul li { padding: 0 !important; }
     .portfolio ul li { position: relative; width: 180px; min-height: 180px; display: inline-block; margin: 0 40px 20px 0; float: left; }
@@ -232,4 +236,5 @@ h2.connect { text-align: right; padding-right: 40px; clear: both; }
 
 @media screen and (max-width: 767px) {
     .weblog .post_thumbnail img, .single .blog_post img { width: 100%; }
+    .bio .blog_post { margin-right: 10px; }
 }
