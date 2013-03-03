@@ -22,13 +22,13 @@ get_header(); ?>
         
 		<div class="column">
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="metaInfo"><a href="<?php $authorurl = get_post_meta( get_the_ID(), 'url', true ); if ($authorurl) echo $authorurl; ?>" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/<?php the_title(); ?>']);" rel="external nofollow"><?php the_title(); ?></a><span class="posRight"><?php the_time('F, j, Y'); ?></span></div>
+				<div class="metaInfo"><a href="<?php $authorurl = get_post_meta( get_the_ID(), 'url', true ); if ($authorurl) echo $authorurl; ?>" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/<?php the_title(); ?>']);" rel="external nofollow"><?php the_title(); ?></a><span class="pull-right"><?php the_time('F, j, Y'); ?></span></div>
 				<?php
 					the_content();
 				?>
 			</div>
 		</div>
-		<div class="clearAll"></div>
+		<div class="clearfix"></div>
 		
         <?php endwhile; endif; ?>
 		

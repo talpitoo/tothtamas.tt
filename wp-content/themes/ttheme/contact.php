@@ -21,7 +21,7 @@ get_header(); ?>
 				<h3><a href="../weblog/weddings/" class="noborder">Weddings</a></h3>
 				<a href="../weblog/weddings/" class="noborder"><img src="http://images.tothtamas.tt/weblog/weddings/toth-tamas-weddings-jelena-medium.jpg" alt="weddings" title="weddings" width="180" height="180" /></a>
 			</div>
-			<div class="clearAll"></div>
+			<div class="clearfix"></div>
 			<div class="column one-third">
 				<h3><a href="https://plus.google.com/106827193783314871767?rel=author" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/googleplus']);">Tamás+</a></h3>
 				<a href="https://plus.google.com/106827193783314871767?rel=author" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/googleplus']);"><img src="http://images.tothtamas.tt/contact/google-plus-medium.png" alt="follow me on Google+" title="follow me on Google+" width="180" height="180" class="noborder" /></a>
@@ -32,7 +32,7 @@ get_header(); ?>
 				<h3><a href="../weblog/corporate/" class="noborder">Corporate</a></h3>
 				<a href="../weblog/corporate/" class="noborder"><img src="http://images.tothtamas.tt/weblog/corporate/toth-tamas-corporate-bankers-medium.jpg" alt="corporate" title="corporate" width="180" height="180" /></a>
 			</div>
-			<div class="clearAll"></div>
+			<div class="clearfix"></div>
 			<div class="column two-thirds">
 			</div>
 			<div class="column one-third">
@@ -41,7 +41,7 @@ get_header(); ?>
 				<p>If you like these photos and would like to have your story shot in a similar style, feel free to contact me about any kind of project.</p>
 				<h2><a href="mailto:<?php bloginfo('admin_email'); ?>">Book me &rsaquo;</a></h2>
 			</div>
-			<div class="clearAll"></div>
+			<div class="clearfix"></div>
         </div>
 	</div>
 	<div id="site-generator">

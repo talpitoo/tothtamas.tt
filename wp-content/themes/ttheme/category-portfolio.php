@@ -77,7 +77,7 @@ get_header(); ?>
 				echo '</ul>';
 			*/
 			?>
-			<h2 class="connect"><a href="../weblog"><span class="regular">more stories on</span> Weblog &rsaquo;</a></h2>
+			<h2 class="connect"><a href="../weblog"><span>more stories on</span> Weblog &rsaquo;</a></h2>
         </div>
 	</div> 
 	<div id="site-generator">

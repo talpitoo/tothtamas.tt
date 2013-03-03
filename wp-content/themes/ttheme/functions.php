@@ -85,12 +85,12 @@ function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr )
 	if ($originalimage) {
 		if (endsWith($originalimage, '.jpg')) {
 			$largeimage = str_replace(".jpg", "-large.jpg", $originalimage);
-			$mediumimage = str_replace(".jpg", "-medium.jpg", $originalimage);
+			$mediumimage = str_replace(".jpg", "-large-square.jpg", $originalimage);
 			$thumbimage = str_replace(".jpg", "-thumbnail.jpg", $originalimage);
 		}
 		if (endsWith($originalimage, '.gif')) {
 			$largeimage = str_replace(".gif", "-large.gif", $originalimage);
-			$mediumimage = str_replace(".gif", "-medium.gif", $originalimage);
+			$mediumimage = str_replace(".gif", "-large-square.gif", $originalimage);
 			$thumbimage = str_replace(".gif", "-thumbnail.gif", $originalimage);
 		}
 		switch ($size) :			
@@ -116,7 +116,7 @@ function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr )
 		switch ($size) :			
 			
 			case "medium" :
-				$html = "<img src='http://images.tothtamas.tt/boy-medium.jpg' class='front' /></a>";
+				$html = "<img src='http://images.tothtamas.tt/boy-large-square.jpg' class='front' /></a>";
 				break;
 			
 			case "thumbnail" :

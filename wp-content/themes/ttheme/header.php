@@ -24,7 +24,7 @@
 		echo "$site_description";
 	?>" />
 <style type="text/css" media="screen">
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600&subset=latin,cyrillic);
 @import url( <?php bloginfo('template_url'); ?>/css/bootstrap.css );
 @import url( <?php bloginfo('template_url'); ?>/css/supersized.css );
 @import url( <?php bloginfo('stylesheet_url');?> );

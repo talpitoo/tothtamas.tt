@@ -108,8 +108,9 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
 </div>
 
 <div class="control-group">
+	<label></label>
 	<div class="controls">
-		<input name="submit" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e('Submit Comment'); ?>" />
+		<input name="submit" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e('Submit Comment'); ?>" class="btn"/>
 		<?php comment_id_fields(); ?>
 	</div>
 </div>
