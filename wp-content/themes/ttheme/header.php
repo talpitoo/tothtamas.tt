@@ -24,6 +24,7 @@
 	//if ( $site_description && ( is_home() || is_front_page() ) )
 		echo "$site_description";
 	?>" />
+
 <style type="text/css" media="screen">
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600&subset=latin,cyrillic);
 @import url( <?php bloginfo('template_url'); ?>/css/bootstrap.css );
@@ -78,7 +79,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 	<!-- Static navbar -->
 	<div class="navbar navbar-static-top">
 		
@@ -87,7 +87,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a href="<?php echo home_url(); ?>" class="navbar-brand noborder" href="#"><?php echo get_bloginfo('name'); ?></a>
+			<a href="<?php echo home_url(); ?>" class="navbar-brand noborder"><?php echo get_bloginfo('name'); ?></a>
 			<div class="triangle"></div>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
@@ -97,7 +97,6 @@
 			</div><!--/.nav-collapse -->
 		
 	</div>
-
 	<h2 class="bloginfo-description"><?php echo get_bloginfo('description'); ?></h2>
-	<img src="http://photto.org/images/toth-tamas-tt.jpg" name="tt" alt="tothtamas.tt" style="position: absolute; left: -10000px;">
+	<img src="http://photto.org/images/toth-tamas-tt.jpg" alt="tothtamas.tt" style="position: absolute; left: -10000px;">
 	<p class="bloginfo-description">powered by <a href="https://plus.google.com/106827193783314871767?rel=author">Tamás Tóth</a></p>

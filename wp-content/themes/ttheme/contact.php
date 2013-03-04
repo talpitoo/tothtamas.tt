@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 /*
 Template Name: Contact
 */
@@ -16,7 +16,7 @@ get_header(); ?>
           <h1>Contact</h1>
           <p>Tóth Tamás</p>
           <p>
-            <a href="mailto:"<?php bloginfo('admin_email'); ?>"><?php bloginfo('admin_email'); ?>
+            <a href="mailto:<?php bloginfo('admin_email'); ?>"><?php bloginfo('admin_email'); ?>
             </a>
           </p>
           <p>+381 64 2419645</p>
@@ -62,7 +62,7 @@ get_header(); ?>
         <div class="span3">
           <h2>&nbsp;</h2>
           <p>
-            If you like these photos and would like to have your story shot in a similar style, feel free to <a href="mailto:"<?php bloginfo('admin_email'); ?>">contact me</a> about any kind of project.
+            If you like these photos and would like to have your story shot in a similar style, feel free to <a href="mailto:<?php bloginfo('admin_email'); ?>">contact me</a> about any kind of project.
           </p>
         </div>
       </div>

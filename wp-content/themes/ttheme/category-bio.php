@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 /*
 Template Name: Bio
 */
@@ -37,8 +37,8 @@ get_header(); ?>
       <div class="row">
 					<div class="span4 post_thumbnail">
 						<a href="<?php the_permalink(); ?>">
-						  <?php the_post_thumbnail('medium'); ?>
-						</a>
+              <?php the_post_thumbnail('medium'); ?>
+            </a>
 					</div>
     			<div class="span8">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -50,6 +50,7 @@ get_header(); ?>
 		</div>
 		
         <?php endwhile; endif; ?>
+
             <div class="blog_pagenavi">
                 <?php wp_pagenavi(); ?>
             </div>

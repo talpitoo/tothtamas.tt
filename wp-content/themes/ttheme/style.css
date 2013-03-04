@@ -138,6 +138,7 @@ a:hover .l-submit { color: #b5000; }
 
 /* paging */
 .wp-pagenavi { margin-left: 10px; }
+    .wp-pagenavi .extend { padding: 0 10px; }
     .wp-pagenavi a, .wp-pagenavi .current { color: #fff; background-color: #292929; border: none; display: inline-block; margin: 0 1px 10px 0; padding: 10px 15px; }
     .wp-pagenavi .current { color: #777; }
 
@@ -192,7 +193,7 @@ blockquote { padding-left: 36px; min-height: 19px; border: none; background: url
 
 /*.portfolio [class^="span"] { position: relative;}*/
 .portfolio img { margin-bottom: 20px; width: 100%; }
-.portfolio .comingsoon .overlay { background-color: #CCCCCC; color: #000000; display: inline-block; font-size: 35px; font-weight: 800; height: 117px; line-height: 117px; margin: 0 0 -137px 0; opacity: 0.5; text-align: center; width: 100%; float: left;}
+.portfolio .comingsoon .overlay { background-color: #CCCCCC; color: #000000; display: inline-block; font-size: 35px; font-weight: 800; height: 117px; line-height: 117px; margin: 0 0 -137px 0; opacity: 0.5; text-align: center; width: 100%; float: left; }
 .portfolio .comingsoon a { cursor: default; }
 
 h2.connect { text-align: right; padding-right: 40px; clear: both; }
@@ -224,7 +225,7 @@ h2.connect { text-align: right; padding-right: 40px; clear: both; }
     .triangle { display: none; }
     .navbar-brand,
     .navbar-brand:hover,
-    .navbar-brand:focus { max-width: none; width: 100%; }
+    .navbar-brand:focus { max-width: none; width: 100%; float: none;}
     .navbar .nav { margin: 0; background: transparent; padding: 0 0 60px 0; }
         .navbar .nav li { background: black; }
             .navbar .nav li a { height: auto; line-height: normal !important; padding: 5px 32px !important; }
