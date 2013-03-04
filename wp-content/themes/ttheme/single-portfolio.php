@@ -1,17 +1,16 @@
 <?php get_header(); ?>
 
-<div id="mainpage" class="single">
-	<div class="page_content">
+<div id="mainpage" class="container single">
+	<div class="row">
 		
-		<!-- start content area -->
-		<div id="content">
-			<!-- start post content -->
-			<h2>Single image preview is disabled for now</h2>
-		</div><!-- end #content -->
+		<div id="content" class="span8">
+			<h1>Single image preview is disabled for now</h1>
+		</div>
 		
-		<?php get_sidebar(); ?>
-		
-	</div><!-- end .page -->
+		<div class="span4">
+		  <?php get_sidebar(); ?>
+		</div>
+	</div>
 	<div id="site-generator">
 		<?php include(TEMPLATEPATH.'/poweredby.php'); ?>
 	</div>

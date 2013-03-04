@@ -1,18 +1,19 @@
 <?php get_header(); ?>
 
-<div id="mainpage" class="single">
-	<div class="page_content">
+<div id="mainpage" class="container single">
+	<div class="row">
 		
-		<!-- start content area -->
-		<div id="content">
+		<div id="content" class="span8">
 			<div class="results">
-				<h2>Archives are not supported for now</h2>
+				<h1>Archives are not supported for now</h1>
 			</div>
-		</div><!-- end #content -->
+		</div>
 		
-		<?php get_sidebar(); ?>
+		<div class="span4">
+		  <?php get_sidebar(); ?>
+		</div>
 		
-	</div><!-- end .page -->
+	</div>
 </div>
 
 <?php get_footer(); ?>

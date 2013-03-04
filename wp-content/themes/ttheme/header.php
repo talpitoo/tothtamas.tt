@@ -42,7 +42,8 @@
 	wp_enqueue_script('custom', TTBLOG_JS . '/bootstrap-collapse.js');
 	//wp_enqueue_script('custom', TTBLOG_JS . '/custom.js', '', $version);
 	if (is_home()) {
-		wp_enqueue_script('supersized', TTBLOG_JS . '/supersized.3.1.3.js');
+		wp_enqueue_script('supersized', TTBLOG_JS . '/supersized.3.2.7.min.js');
+		wp_enqueue_script('supersizedtheme', TTBLOG_JS . '/supersized.shutter.min.js');
 	}
 	if (is_category('Portfolio')) {
 		wp_enqueue_script('custom-portfolio', TTBLOG_JS . '/custom-portfolio.js', '', $version);

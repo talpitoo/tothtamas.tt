@@ -44,8 +44,8 @@ get_header(); ?>
       </div>
     </div>
 		<div class="span3">
-      <?php get_sidebar(); ?>
-    </div>
+		  <?php get_sidebar(); ?>
+		</div>
 	</div>
 	<div id="site-generator">
 		<?php include(TEMPLATEPATH.'/poweredby.php'); ?>
