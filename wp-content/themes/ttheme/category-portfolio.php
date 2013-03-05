@@ -13,8 +13,8 @@ get_header(); ?>
         </div>
       </div>
 
-	<div class="row">
-        <div class="span4 offset4">
+      <div class="row">
+        <div class="span4 offset3">
           <h2>
             <a class="noborder" href="http://tothtamas.tt/weblog/my-mom-in-the-mountains/" >My mom in the mountains</a>
           </h2>
@@ -22,7 +22,7 @@ get_header(); ?>
             <img src="http://images.tothtamas.tt/weblog/my-mom-in-the-mountains/toth-tamas-my-mom-in-the-mountains-02-large-square.jpg" alt="My mom in the mountains" />
           </a>
         </div>
-		<div class="span3">
+        <div class="span3">
           <h2>
             <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2010/" >LGBT 2010</a>
           </h2>
@@ -30,62 +30,62 @@ get_header(); ?>
             <img src="http://images.tothtamas.tt/weblog/lgbt-2010/toth-tamas-lgbt-2010-21-large-square.jpg" alt="LGBT 2010" />
           </a>
         </div>
-	</div>
-	<div class="row">
+      </div>
+      <div class="row">
         <div class="span5">
-			<div class="row">
-				<div class="span8 offset4">
-					<h2>
-						<a class="noborder" href="http://tothtamas.tt/weblog/the-snowmans-sin/" >The snowman’s sin</a>
-					  </h2>
-					  <a class="noborder" href="http://tothtamas.tt/weblog/the-snowmans-sin/" >
-						<img src="http://images.tothtamas.tt/weblog/snowman/toth-tamas-snowman-01-large-square.jpg" alt="The snowman’s sin" />
-					  </a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="span10 offset2">
-					<h2>
-						<a class="noborder" href="http://tothtamas.tt/weblog/wedding-photography-revisited/" >Wedding photography revisited</a>
-					  </h2>
-					  <a class="noborder" href="http://tothtamas.tt/weblog/wedding-photography-revisited/" >
-						<img src="http://images.tothtamas.tt/weblog/wedding-photography-revisited/toth-tamas-anett-and-edvard-14-large-square.jpg" alt="Wedding photography revisited" />
-					  </a>
-				</div>
-			</div>
-		</div>
-		<div class="span6">
-			<div class="row">
-				<div class="span9">
-					<h2>
-						<a class="noborder" href="http://tothtamas.tt/weblog/bye-bye/" >Bye-bye</a>
-					  </h2>
-					  <a class="noborder" href="http://tothtamas.tt/weblog/bye-bye/" >
-						<img src="http://images.tothtamas.tt/weblog/bye-bye/toth-tamas-bye-bye-01-large-square.jpg" alt="Bye-bye" />
-					  </a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="span6">
-					<h2>
-						<a class="noborder" href="http://tothtamas.tt/weblog/six-months/" >Six months</a>
-					  </h2>
-					  <a class="noborder" href="http://tothtamas.tt/weblog/six-months/" >
-						<img src="http://images.tothtamas.tt/portfolio/stories/six-months/toth-tamas-six-months-20-first-snow-large-square.jpg" alt="Six months" />
-					  </a>
-				</div>
-				<div class="span4">
-					<h2>
-						<a class="noborder" href="http://tothtamas.tt/weblog/oath-of-citizenship/" >Oath of citizenship</a>
-					  </h2>
-					  <a class="noborder" href="http://tothtamas.tt/weblog/oath-of-citizenship/" >
-						<img src="http://images.tothtamas.tt/weblog/oath-of-citizenship/toth-tamas-oath-of-citizenship-01-large-square.jpg" alt="Oath of citizenship" />
-					  </a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row">	
+          <div class="row">
+            <div class="span8 offset4">
+              <h2>
+                <a class="noborder" href="http://tothtamas.tt/weblog/the-snowmans-sin/" >The snowman’s sin</a>
+              </h2>
+              <a class="noborder" href="http://tothtamas.tt/weblog/the-snowmans-sin/" >
+                <img src="http://images.tothtamas.tt/weblog/snowman/toth-tamas-snowman-01-large-square.jpg" alt="The snowman’s sin" />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span10 offset2">
+              <h2>
+                <a class="noborder" href="http://tothtamas.tt/weblog/wedding-photography-revisited/" >Wedding photography revisited</a>
+              </h2>
+              <a class="noborder" href="http://tothtamas.tt/weblog/wedding-photography-revisited/" >
+                <img src="http://images.tothtamas.tt/weblog/wedding-photography-revisited/toth-tamas-anett-and-edvard-14-large-square.jpg" alt="Wedding photography revisited" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="span6">
+          <div class="row">
+            <div class="span9">
+              <h2>
+                <a class="noborder" href="http://tothtamas.tt/weblog/bye-bye/" >Bye-bye</a>
+              </h2>
+              <a class="noborder" href="http://tothtamas.tt/weblog/bye-bye/" >
+                <img src="http://images.tothtamas.tt/weblog/bye-bye/toth-tamas-bye-bye-01-large-square.jpg" alt="Bye-bye" />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span6">
+              <h2>
+                <a class="noborder" href="http://tothtamas.tt/weblog/six-months/" >Six months</a>
+              </h2>
+              <a class="noborder" href="http://tothtamas.tt/weblog/six-months/" >
+                <img src="http://images.tothtamas.tt/portfolio/stories/six-months/toth-tamas-six-months-20-first-snow-large-square.jpg" alt="Six months" />
+              </a>
+            </div>
+            <div class="span4">
+              <h2>
+                <a class="noborder" href="http://tothtamas.tt/weblog/oath-of-citizenship/" >Oath of citizenship</a>
+              </h2>
+              <a class="noborder" href="http://tothtamas.tt/weblog/oath-of-citizenship/" >
+                <img src="http://images.tothtamas.tt/weblog/oath-of-citizenship/toth-tamas-oath-of-citizenship-01-large-square.jpg" alt="Oath of citizenship" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="span3 offset4">
           <h2>
             <a class="noborder" href="http://tothtamas.tt/weblog/team-building/"  >Team building</a>
@@ -94,22 +94,14 @@ get_header(); ?>
             <img src="http://images.tothtamas.tt/weblog/team-building/toth-tamas-barcelona-team-building-01-large-square.jpg" alt="Team building" />
           </a>
         </div>
-		<div class="span3">
+      </div>
+      <div class="row">
+        <div class="span3 offset3">
           <h2>
             <a class="noborder" href="http://tothtamas.tt/weblog/giraffe/"  >Giraffe</a>
           </h2>
           <a class="noborder" href="http://tothtamas.tt/weblog/giraffe/" >
             <img src="http://images.tothtamas.tt/weblog/giraffe/toth-tamas-giraffe-09-large-square.jpg" alt="Giraffe" />
-          </a>
-        </div>
-       </div>
-	<div class="row">	 
-		<div class="span2 offset4">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/virtual-pride/"  >Virtual pride</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/virtual-pride/" >
-            <img src="http://images.tothtamas.tt/weblog/virtual-pride/toth-tamas-virtual-pride-06-large-square.jpg" alt="Virtual pride" />
           </a>
         </div>
         <div class="span3">
@@ -120,8 +112,16 @@ get_header(); ?>
             <img src="http://images.tothtamas.tt/weblog/if-walls-could-talk/toth-tamas-if-walls-could-talk-dusk-large-square.jpg" alt="If walls could talk"/>
           </a>
         </div>
-        
-		
+      </div>
+      <div class="row">
+        <div class="span2 offset6">
+          <h2>
+            <a class="noborder" href="http://tothtamas.tt/weblog/virtual-pride/"  >Virtual pride</a>
+          </h2>
+          <a class="noborder" href="http://tothtamas.tt/weblog/virtual-pride/" >
+            <img src="http://images.tothtamas.tt/weblog/virtual-pride/toth-tamas-virtual-pride-06-large-square.jpg" alt="Virtual pride" />
+          </a>
+        </div>
       </div>
 
       <h2 class="connect">
