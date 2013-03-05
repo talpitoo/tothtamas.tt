@@ -9,7 +9,8 @@ Version: 2.0
 body { font-family: 'Open Sans', sans-serif; background: #222; color: #fff; }
 a { color: #c3c2c2; border-bottom: 1px dotted #c3c2c2; }
     a:hover, a:focus { border: none; text-decoration: none; color: #C3C2C2; }
-p, .blog_post .post_thumbnail, blockquote { margin-bottom: 20px; }
+.blog_post .post_thumbnail { margin-bottom: 20px; }
+p, blockquote, .blog_post p img { margin-bottom: 10px; }
 .query { color: #c3c2c2; }
 .noborder, a.noborder:hover { border: none !important; }
 .lowercase { text-transform: lowercase; font-weight: normal; }
@@ -40,9 +41,9 @@ ul.nav li a { font-weight: 600; text-transform: uppercase; border: none; font-si
     ul.nav li a:hover { color: #c3c2c2; }
 
 /* grid adjust */
-.container { max-width: 940px; padding: 40px 20px 20px 20px; margin: 40px auto; background-color: #101010; }
-.single .container, .search .container { padding: 40px 20px 20px 30px; }
+.container { max-width: 940px; padding: 40px 40px 20px 40px; margin: 40px auto; background-color: #101010; }
 [class^="span"] { padding-left: 20px; padding-right: 20px; }
+.row {margin-left: -20px; margin-right: -20px;}
 
 /* page */
 .btn { font-size: 13px; background-color: #292929; border: none; border-radius: 0; font-family: 'Open Sans', sans-serif; }
@@ -191,7 +192,6 @@ blockquote { padding-left: 36px; min-height: 19px; border: none; background: url
 .contact img { margin-bottom: 20px; }
 .contact .post_thumbnail img { margin-bottom: 40px; width: 100%; }
 
-/*.portfolio [class^="span"] { position: relative;}*/
 .portfolio img { margin-bottom: 20px; width: 100%; }
 .portfolio .comingsoon .overlay { background-color: #CCCCCC; color: #000000; display: inline-block; font-size: 35px; font-weight: 800; height: 117px; line-height: 117px; margin: 0 0 -137px 0; opacity: 0.5; text-align: center; width: 100%; float: left; }
 .portfolio .comingsoon a { cursor: default; }

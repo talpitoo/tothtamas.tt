@@ -13,145 +13,115 @@ get_header(); ?>
         </div>
       </div>
 
-      <div class="row">
-        <div class="span2">
+	<div class="row">
+        <div class="span4 offset4">
           <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/blokada/" >#blokada</a>
+            <a class="noborder" href="http://tothtamas.tt/weblog/my-mom-in-the-mountains/" >My mom in the mountains</a>
           </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/blokada/" >
-            <img src="http://images.tothtamas.tt/weblog/blokada/toth-tamas-blokada-balloon-large-square.jpg" alt="View all images in #blokada"/>
+          <a class="noborder" href="http://tothtamas.tt/weblog/my-mom-in-the-mountains/" >
+            <img src="http://images.tothtamas.tt/weblog/my-mom-in-the-mountains/toth-tamas-my-mom-in-the-mountains-02-large-square.jpg" alt="My mom in the mountains" />
           </a>
         </div>
-        <div class="span2 comingsoon">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/portfolio/stories/critical-mass/" >Critical mass</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/portfolio/stories/critical-mass/"  >
-            <img src="http://images.tothtamas.tt/portfolio/stories/critical-mass-belgrade/toth-tamas-critical-mass-belgrade-01-large-square.jpg" alt="View all images in Critical mass"/>
-          </a>
-        </div>
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/high-heel-race/" >High heels</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/high-heel-race/"  >
-            <img src="http://images.tothtamas.tt/weblog/high-heels/toth-tamas-high-heels-05-large-square.jpg" alt="View all images in High heels"/>
-          </a>
-        </div>
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/hunger-strike/" >Hunger strike</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/hunger-strike/"  >
-            <img src="http://images.tothtamas.tt/weblog/hunger-strike/toth-tamas-hunger-strike-01-large-square.jpg" alt="View all images in Hunger strike" />
-          </a>
-        </div>
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/indians/" >Indians</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/indians/"  >
-            <img src="http://images.tothtamas.tt/weblog/indians/toth-tamas-indians-01-large-square.jpg" alt="View all images in Indians" />
-          </a>
-        </div>
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/portfolio/stories/it/" >IT</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/portfolio/stories/it/" >
-            <img src="http://images.tothtamas.tt/portfolio/stories/it/toth-tamas-buraz-large-square.jpg" alt="View all images in IT"  />
-          </a>
-        </div>
-
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/landslide/"  >Landslide</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/landslide/"  >
-            <img src="http://images.tothtamas.tt/weblog/landslide/toth-tamas-landslide-03-large-square.jpg" alt="View all images in Landslide"/>
-          </a>
-        </div>
-        <div class="span2">
+		<div class="span3">
           <h2>
             <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2010/" >LGBT 2010</a>
           </h2>
           <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2010/" >
-            <img src="http://images.tothtamas.tt/weblog/lgbt-2010/toth-tamas-lgbt-2010-21-large-square.jpg" alt="View all images in LGBT 2010" />
+            <img src="http://images.tothtamas.tt/weblog/lgbt-2010/toth-tamas-lgbt-2010-21-large-square.jpg" alt="LGBT 2010" />
           </a>
         </div>
-        <div class="span2">
+	</div>
+	<div class="row">
+        <div class="span5">
+			<div class="row">
+				<div class="span8 offset4">
+					<h2>
+						<a class="noborder" href="http://tothtamas.tt/weblog/the-snowmans-sin/" >The snowman’s sin</a>
+					  </h2>
+					  <a class="noborder" href="http://tothtamas.tt/weblog/the-snowmans-sin/" >
+						<img src="http://images.tothtamas.tt/weblog/snowman/toth-tamas-snowman-01-large-square.jpg" alt="The snowman’s sin" />
+					  </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span10 offset2">
+					<h2>
+						<a class="noborder" href="http://tothtamas.tt/weblog/wedding-photography-revisited/" >Wedding photography revisited</a>
+					  </h2>
+					  <a class="noborder" href="http://tothtamas.tt/weblog/wedding-photography-revisited/" >
+						<img src="http://images.tothtamas.tt/weblog/wedding-photography-revisited/toth-tamas-anett-and-edvard-14-large-square.jpg" alt="Wedding photography revisited" />
+					  </a>
+				</div>
+			</div>
+		</div>
+		<div class="span6">
+			<div class="row">
+				<div class="span9">
+					<h2>
+						<a class="noborder" href="http://tothtamas.tt/weblog/bye-bye/" >Bye-bye</a>
+					  </h2>
+					  <a class="noborder" href="http://tothtamas.tt/weblog/bye-bye/" >
+						<img src="http://images.tothtamas.tt/weblog/bye-bye/toth-tamas-bye-bye-01-large-square.jpg" alt="Bye-bye" />
+					  </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span6">
+					<h2>
+						<a class="noborder" href="http://tothtamas.tt/weblog/six-months/" >Six months</a>
+					  </h2>
+					  <a class="noborder" href="http://tothtamas.tt/weblog/six-months/" >
+						<img src="http://images.tothtamas.tt/portfolio/stories/six-months/toth-tamas-six-months-20-first-snow-large-square.jpg" alt="Six months" />
+					  </a>
+				</div>
+				<div class="span4">
+					<h2>
+						<a class="noborder" href="http://tothtamas.tt/weblog/oath-of-citizenship/" >Oath of citizenship</a>
+					  </h2>
+					  <a class="noborder" href="http://tothtamas.tt/weblog/oath-of-citizenship/" >
+						<img src="http://images.tothtamas.tt/weblog/oath-of-citizenship/toth-tamas-oath-of-citizenship-01-large-square.jpg" alt="Oath of citizenship" />
+					  </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">	
+        <div class="span3 offset4">
           <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2011/"  >LGBT 2011</a>
+            <a class="noborder" href="http://tothtamas.tt/weblog/team-building/"  >Team building</a>
           </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2011/"  >
-            <img src="http://images.tothtamas.tt/weblog/lgbt-2011/toth-tamas-lgbt-2011-02-large-square.jpg" alt="View all images in LGBT 2011"/>
+          <a class="noborder" href="http://tothtamas.tt/weblog/team-building/" >
+            <img src="http://images.tothtamas.tt/weblog/team-building/toth-tamas-barcelona-team-building-01-large-square.jpg" alt="Team building" />
           </a>
         </div>
-        <div class="span2">
+		<div class="span3">
           <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/ratko-mladic/" >Ratko Mladić</a>
+            <a class="noborder" href="http://tothtamas.tt/weblog/giraffe/"  >Giraffe</a>
           </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/ratko-mladic/"  >
-            <img src="http://images.tothtamas.tt/weblog/ratko-mladic/toth-tamas-ratko-mladic-07-large-square.jpg" alt="View all images in Ratko Mladić" />
+          <a class="noborder" href="http://tothtamas.tt/weblog/giraffe/" >
+            <img src="http://images.tothtamas.tt/weblog/giraffe/toth-tamas-giraffe-09-large-square.jpg" alt="Giraffe" />
           </a>
         </div>
-        <div class="span2 comingsoon">
+       </div>
+	<div class="row">	 
+		<div class="span2 offset4">
           <h2>
-            <a class="noborder" href="http://tothtamas.tt/portfolio/stories/six-months/"  >Six months</a>
+            <a class="noborder" href="http://tothtamas.tt/weblog/virtual-pride/"  >Virtual pride</a>
           </h2>
-          <a class="noborder" href="http://tothtamas.tt/portfolio/stories/six-months/" >
-            <img src="http://images.tothtamas.tt/portfolio/stories/six-months/toth-tamas-six-months-20-first-snow-large-square.jpg" alt="View all images in Six months" />
+          <a class="noborder" href="http://tothtamas.tt/weblog/virtual-pride/" >
+            <img src="http://images.tothtamas.tt/weblog/virtual-pride/toth-tamas-virtual-pride-06-large-square.jpg" alt="Virtual pride" />
           </a>
         </div>
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/sns/"  >SNS</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/sns/" >
-            <img src="http://images.tothtamas.tt/weblog/sns/toth-tamas-sns-06-large-square.jpg" alt="View all images in SNS" />
-          </a>
-        </div>
-
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://images.tothtamas.tt/weblog/children/" >Children</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/children/"  >
-            <img src="http://images.tothtamas.tt/weblog/children/toth-tamas-sledgy-large-square.jpg" alt="View all images in Children"/>
-          </a>
-        </div>
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/dogs-life/"  >Dog's life</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/dogs-life/" >
-            <img src="http://images.tothtamas.tt/weblog/dogs-life/toth-tamas-packed-passenger-large-square.jpg" alt="View all images in Dog's life"  />
-          </a>
-        </div>
-        <div class="span2">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/hajna/"  >Hajna</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/hajna/"  >
-            <img src="http://images.tothtamas.tt/weblog/hajna/toth-tamas-hajna-varljivo-leto-large-square.jpg" alt="View all images in Hajna"/>
-          </a>
-        </div>
-        <div class="span2">
+        <div class="span3">
           <h2>
             <a class="noborder" href="http://tothtamas.tt/weblog/if-walls-could-talk/"  >If walls could talk</a>
           </h2>
           <a class="noborder" href="http://tothtamas.tt/weblog/if-walls-could-talk/"  >
-            <img src="http://images.tothtamas.tt/weblog/if-walls-could-talk/toth-tamas-if-walls-could-talk-dusk-large-square.jpg" alt="View all images in If walls could talk"/>
+            <img src="http://images.tothtamas.tt/weblog/if-walls-could-talk/toth-tamas-if-walls-could-talk-dusk-large-square.jpg" alt="If walls could talk"/>
           </a>
         </div>
-        <div class="span2 comingsoon">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/portfolio/collections/who-is-that-girl/" >Who's that girl</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/portfolio/collections/who-is-that-girl/"  >
-            <img src="http://images.tothtamas.tt/portfolio/collections/who-is-that-girl/toth-tamas-tina-solar-t-rainfairy-large-square.jpg" alt="View all images in Who's that girl" />
-          </a>
-        </div>
+        
+		
       </div>
 
       <h2 class="connect">
