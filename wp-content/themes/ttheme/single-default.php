@@ -25,6 +25,9 @@
         </div>
         <!-- end post content -->
       <?php endwhile; ?>
+	  
+	<?php MRP_show_related_posts() ?>
+	
       <?php comments_template(); ?>
     </div>
     <div class="span4">

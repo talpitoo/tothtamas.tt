@@ -81,7 +81,7 @@ add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 5 );
 
 function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
 	
-	$originalimage = get_post_meta( get_the_ID(), 'image', true );	
+	$originalimage = get_post_meta( $post_id, 'image', true );	
 	if ($originalimage) {
 		if (endsWith($originalimage, '.jpg')) {
 			$largeimage = str_replace(".jpg", "-large.jpg", $originalimage);
