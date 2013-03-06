@@ -240,3 +240,5 @@ h2.connect { font-size: 3rem; text-align: right; margin-top: 40px;}
     .weblog .post_thumbnail img, .single .blog_post img, .related-posts img { width: 100%; }
     .bio .blog_post { margin-right: 10px; }
 }
+
+#infscr-loading {margin: auto; text-align: center;}

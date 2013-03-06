@@ -36,7 +36,7 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
     <?php endwhile; ?>
   </div>
   <?php } ?>
-
+	
   <div class="section">
     <h3>Popular posts</h3>
     <?php
