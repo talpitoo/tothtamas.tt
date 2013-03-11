@@ -7,11 +7,26 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
+Redirect 301 /portfolio/stories/blokada/ /weblog/blokada/
+Redirect 301 /portfolio/stories/critical-mass-belgrade/ /weblog/critical-mass-belgrade/
+Redirect 301 /portfolio/stories/high-heels/ /weblog/high-heel-race/
+Redirect 301 /portfolio/stories/hunger-strike/ /weblog/hunger-strike/
+Redirect 301 /portfolio/stories/indians/ /weblog/indians/
+Redirect 301 /portfolio/stories/it/ /weblog/it/
 Redirect 301 /portfolio/stories/landslide/ /weblog/landslide/
+Redirect 301 /portfolio/stories/lgbt-2010/ /weblog/lgbt-2010/
+Redirect 301 /portfolio/stories/lgbt-2011/ /weblog/lgbt-2011/
+Redirect 301 /portfolio/stories/ratko-mladic/ /weblog/ratko-mladic/
+Redirect 301 /portfolio/stories/six-months/ /weblog/six-months/
+Redirect 301 /portfolio/stories/sns/ /weblog/sns/
+
 Redirect 301 /portfolio/collections/children/ /weblog/children/
-Redirect 301 /portfolio/stories/high-heels /weblog/high-heel-race/
-Redirect 301 /portfolio/stories/blokada /weblog/blokada/
-Redirect 301 /portfolio/stories/hunger-strike /weblog/hunger-strike/
+Redirect 301 /portfolio/collections/dogs-life/ /weblog/dogs-life/
+Redirect 301 /portfolio/collections/hajna/ /weblog/hajna/
+Redirect 301 /portfolio/collections/if-walls-could-talk/ /weblog/if-walls-could-talk/
+Redirect 301 /portfolio/collections/singles/ /
+Redirect 301 /portfolio/collections/travel/ /
+Redirect 301 /portfolio/collections/who-is-that-girl/ /portfolio/
 Redirect 301 /portfolio/collections/weddings/ /weblog/weddings/
 Redirect 301 /portfolio/collections/corporate/ /weblog/corporate/
 </IfModule>

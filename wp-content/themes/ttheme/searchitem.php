@@ -1,11 +1,20 @@
 <?php
 /**
- * The default template for displaying content
+ * The default template for displaying content (default for weblog)
  */
 ?>
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-		<div class="entry-summary">
-			<?php the_excerpt(); ?>
-		</div><!-- .entry-summary -->
-	</article><!-- #post-<?php the_ID(); ?> -->
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="row">
+		<div class="span4 post_thumbnail">
+			<a href="<?php the_permalink(); ?>">
+			  <?php the_post_thumbnail('medium'); ?>
+			</a>
+		</div>
+	<div class="span8">
+	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	<div class="metaInfo"><?php the_time('F, j, Y'); ?> / <a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?> comments</a></div>
+	<?php the_excerpt(); ?>
+	<a href="<?php the_permalink(); ?>" class="pull-right btn">Read more</a>
+		  </div>
+	  </div>
+  </div>

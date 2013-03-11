@@ -9,7 +9,7 @@
 	 * Print the <title> tag based on what is being viewed.
 	 */
 	global $page, $paged;
-	$version = "?v2.0";
+	$version = "?v2.1";
 
 	wp_title( '|', true, 'right' );
 
@@ -42,7 +42,7 @@
 	wp_enqueue_script('custom', TTBLOG_JS . '/bootstrap-collapse.js');
 	//wp_enqueue_script('custom', TTBLOG_JS . '/custom.js', '', $version);
 	if (is_home()) {
-		wp_enqueue_script('supersized', TTBLOG_JS . '/supersized.3.2.7.min.js');
+		wp_enqueue_script('supersized', TTBLOG_JS . '/supersized.3.2.7.min.js', '', $version);
 		wp_enqueue_script('supersizedtheme', TTBLOG_JS . '/supersized.shutter.min.js');
 	}
 	if (is_category('Portfolio')) {
@@ -98,6 +98,6 @@
 			</div><!--/.nav-collapse -->
 		
 	</div>
-	<h2 class="bloginfo-description"><?php echo get_bloginfo('description'); ?></h2>
-	<img src="http://photto.org/images/toth-tamas-tt.jpg" alt="tothtamas.tt" style="position: absolute; left: -10000px;">
-	<p class="bloginfo-description">powered by <a href="https://plus.google.com/106827193783314871767?rel=author">Tamás Tóth</a></p>
+	<h2 class="bloginfo-description hide"><?php echo get_bloginfo('description'); ?></h2>
+	<img src="http://photto.org/images/toth-tamas-tt.jpg" alt="tothtamas.tt" class="hide">
+	<p class="hide">powered by <a href="https://plus.google.com/106827193783314871767?rel=author">Tamás Tóth</a></p>
