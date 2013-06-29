@@ -82,13 +82,13 @@
 <body <?php body_class(); ?>>
 	<!-- Static navbar -->
 	<div class="navbar navbar-static-top">
-		
-			<a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
+			
 			<a href="<?php echo home_url(); ?>" class="navbar-brand noborder"><?php echo get_bloginfo('name'); ?></a>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 			<div class="triangle"></div>
 			<div class="nav-collapse collapse">
 				<ul class="nav">

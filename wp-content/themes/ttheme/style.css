@@ -220,16 +220,17 @@ h2.connect { font-size: 3rem; text-align: right; margin-top: 40px;}
     .navbar-brand,
     .navbar .nav,
     .navbar .nav > li { float: none; }
-    .navbar-toggle { position: absolute; display: block; }
+    .navbar-toggle { position: absolute; display: block;}
     .nav-collapse.collapse { height: 0 !important; }
         .nav-collapse.collapse.in { height: auto !important; }
     .triangle { display: none; }
     .navbar-brand,
     .navbar-brand:hover,
-    .navbar-brand:focus { max-width: none; width: 100%; float: none;}
+    .navbar-brand:focus { x-max-width: none; x-float: none; x-width: 100%;}
     .navbar .nav { margin: 0; background: transparent; padding: 0 0 60px 0; }
         .navbar .nav li { background: black; }
             .navbar .nav li a { height: auto; line-height: normal !important; padding: 5px 32px !important; }
+	.navbar {background-color: #000;}
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
