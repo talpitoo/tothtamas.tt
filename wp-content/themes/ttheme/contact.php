@@ -32,6 +32,12 @@ get_header(); ?>
           <a href="https://twitter.com/talpitoo" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/twitter']);">
             <img src="http://images.tothtamas.tt/contact/twitter-thumbnail.png" alt="@talpitoo" title="@talpitoo" width="65" height="65" class="noborder" />
           </a>
+		  <h2>
+            <a href="http://instagram.com/talpitoo" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/instagram']);">Instagram</a>
+          </h2>
+          <a href="http://instagram.com/talpitoo" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/instagram']);">
+            <img src="http://images.tothtamas.tt/contact/instagram-thumbnail.png" alt="instagram" title="instagram" width="65" height="65" class="noborder" />
+          </a>
         </div>
       </div>
 

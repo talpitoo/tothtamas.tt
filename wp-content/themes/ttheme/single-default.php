@@ -16,6 +16,7 @@
           
           <div class="post_thumbnail">
             <?php the_post_thumbnail('large'); ?>
+			<?php //the_post_thumbnail('large', array('alt' => the_title() )); ?>
             <?php
               $imagecaption = get_post_meta( get_the_ID(), 'caption', true );
 					    if ($imagecaption) echo "<p class='caption'>" . $imagecaption . "</p>";
