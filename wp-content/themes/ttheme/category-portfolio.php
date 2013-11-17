@@ -12,34 +12,48 @@ get_header(); ?>
           <h1>Portfolio</h1>
         </div>
       </div>
-
       <div class="row">
         <div class="span4 offset3">
           <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/my-mom-in-the-mountains/" >My mom in the mountains</a>
+            <a href="http://tothtamas.tt/weblog/the-north-way/" class="noborder">The north way</a>
           </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/my-mom-in-the-mountains/" >
-            <img src="http://images.tothtamas.tt/weblog/my-mom-in-the-mountains/toth-tamas-my-mom-in-the-mountains-02-large-square.jpg" alt="My mom in the mountains" />
+          <a href="http://tothtamas.tt/weblog/the-north-way/" class="noborder">
+            <img src="http://images.tothtamas.tt/weblog/the-north-way/toth-tamas-the-north-way-01-preikestolen-large-square.jpg" alt="The north way" />
           </a>
         </div>
         <div class="span3">
-          <h2>
-            <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2010/" >LGBT 2010</a>
-          </h2>
-          <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2010/" >
-            <img src="http://images.tothtamas.tt/weblog/lgbt-2010/toth-tamas-lgbt-2010-21-large-square.jpg" alt="LGBT 2010" />
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span5">
           <div class="row">
-            <div class="span8 offset4">
+            <div class="span8">
               <h2>
                 <a class="noborder" href="http://tothtamas.tt/weblog/the-snowmans-sin/" >The snowman’s sin</a>
               </h2>
               <a class="noborder" href="http://tothtamas.tt/weblog/the-snowmans-sin/" >
                 <img src="http://images.tothtamas.tt/weblog/snowman/toth-tamas-snowman-01-large-square.jpg" alt="The snowman’s sin" />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span12">
+              <h2>
+                <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2010/" >LGBT 2010</a>
+              </h2>
+              <a class="noborder" href="http://tothtamas.tt/weblog/lgbt-2010/" >
+                <img src="http://images.tothtamas.tt/weblog/lgbt-2010/toth-tamas-lgbt-2010-21-large-square.jpg" alt="LGBT 2010" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span5">
+          <div class="row">
+            <div class="span8 offset4">
+              <h2>
+                <a class="noborder" href="http://tothtamas.tt/weblog/my-mom-in-the-mountains/" >My mom in the mountains</a>
+              </h2>
+              <a class="noborder" href="http://tothtamas.tt/weblog/my-mom-in-the-mountains/" >
+                <img src="http://images.tothtamas.tt/weblog/my-mom-in-the-mountains/toth-tamas-my-mom-in-the-mountains-02-large-square.jpg" alt="My mom in the mountains" />
               </a>
             </div>
           </div>
