@@ -32,37 +32,7 @@
 @import url( <?php bloginfo('stylesheet_url');?><?php echo $version ?> );
 </style>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<?php
-	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' );
-	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script('custom', TTBLOG_JS . '/bootstrap-collapse.js');
-	//wp_enqueue_script('custom', TTBLOG_JS . '/custom.js', '', $version);
-	if (is_home()) {
-		wp_enqueue_script('supersized', TTBLOG_JS . '/supersized.3.2.7.min.js', '', $version);
-		wp_enqueue_script('supersizedtheme', TTBLOG_JS . '/supersized.shutter.min.js');
-	}
-	if (is_category('Portfolio')) {
-		wp_enqueue_script('custom-portfolio', TTBLOG_JS . '/custom-portfolio.js', '', $version);
-	}
-?>
-<?php
-	/* We add some JavaScript to pages with the comment form
-	 * to support sites with threaded comments (when in use).
-	 */
-	if ( is_singular() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
 
-	/* Always have wp_head() just before the closing </head>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to add elements to <head> such
-	 * as styles, scripts, and meta tags.
-	 */
-	wp_head();
-?>
 <meta name="google-site-verification" content="UMA_UoKpWCmvqY7BNPSv6Ba2qGNUWm8_RS4f6XLz06w" />
 <script type="text/javascript">
 
@@ -72,7 +42,7 @@
 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 

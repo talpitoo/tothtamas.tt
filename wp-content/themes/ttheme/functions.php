@@ -81,7 +81,8 @@ add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 5 );
 
 function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
 	
-	$originalimage = get_post_meta( $post_id, 'image', true );	
+	$originalimage = get_post_meta( $post_id, 'image', true );
+	$posttitle = get_the_title($post_id);
 	if ($originalimage) {
 		if (endsWith($originalimage, '.jpg')) {
 			$largeimage = str_replace(".jpg", "-large.jpg", $originalimage);
@@ -96,15 +97,15 @@ function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr )
 		switch ($size) :			
 			
 			case "large" :
-				$html = "<img src='" . $largeimage . "' class='front' /></a>";
+				$html = "<img src='" . $largeimage . "' class='front' alt='" . $posttitle . "'/></a>";
 				break;
 			
 			case "medium" :
-				$html = "<img src='" . $mediumimage . "' class='front' /></a>";
+				$html = "<img src='" . $mediumimage . "' class='front' alt='" . $posttitle . "'/></a>";
 				break;
 			
 			case "thumbnail" :
-				$html = "<img src='" . $thumbimage . "' class='front' />";
+				$html = "<img src='" . $thumbimage . "' class='front' alt='" . $posttitle . "'/></a>";
 				break;
 				
 			default :
