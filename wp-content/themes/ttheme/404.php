@@ -13,7 +13,7 @@ get_header(); ?>
 				<h1>.404</h1>
 				<p>What are you looking for?</p>
 				<img src="http://1.bp.blogspot.com/_uq8Nul3Gos4/S8YZivIeRCI/AAAAAAAAAOg/R2o1nSIZ_Eg/s1600/john112.jpg" width="600" />
-				<p class="align-right">For more monsterdrawings visit <a href="http://johnkenn.blogspot.com/" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/Don Kenn']);">Don Kenn's blog.</a></p>
+				<p class="align-right">For more monsterdrawings visit <a href="http://johnkenn.blogspot.com/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/Don Kenn');">Don Kenn's blog.</a></p>
 			</div>
 		</div>
 		

@@ -21,21 +21,21 @@ get_header(); ?>
           </p>
           <p>+381 64 2419645</p>
           <h2>
-            <a href="https://plus.google.com/106827193783314871767?rel=author" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/googleplus']);">Tamás+</a>
+            <a href="https://plus.google.com/106827193783314871767?rel=author" class="noborder" onmousedown="javascript: ga('send', 'pageview', '/outgoing/googleplus');">Tamás+</a>
           </h2>
-          <a href="https://plus.google.com/106827193783314871767?rel=author" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/googleplus']);">
+          <a href="https://plus.google.com/106827193783314871767?rel=author" class="noborder" onmousedown="javascript: ga('send', 'pageview', '/outgoing/googleplus');">
             <img src="http://images.tothtamas.tt/contact/google-plus-thumbnail.png" alt="follow me on Google+" title="follow me on Google+" width="65" height="65" class="noborder" />
           </a>
           <h2 class="lowercase">
-            <a href="https://twitter.com/talpitoo" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/twitter']);">@talpitoo</a>
+            <a href="https://twitter.com/talpitoo" class="noborder" onmousedown="javascript: ga('send', 'pageview', '/outgoing/twitter');">@talpitoo</a>
           </h2>
-          <a href="https://twitter.com/talpitoo" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/twitter']);">
+          <a href="https://twitter.com/talpitoo" class="noborder" onmousedown="javascript: ga('send', 'pageview', '/outgoing/twitter');">
             <img src="http://images.tothtamas.tt/contact/twitter-thumbnail.png" alt="@talpitoo" title="@talpitoo" width="65" height="65" class="noborder" />
           </a>
 		  <h2>
-            <a href="http://instagram.com/talpitoo" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/instagram']);">Instagram</a>
+            <a href="http://instagram.com/talpitoo" class="noborder" onmousedown="javascript: ga('send', 'pageview', '/outgoing/instagram');">Instagram</a>
           </h2>
-          <a href="http://instagram.com/talpitoo" class="noborder" onClick="javascript: _gaq.push(['_trackPageview', '/outgoing/instagram']);">
+          <a href="http://instagram.com/talpitoo" class="noborder" onmousedown="javascript: ga('send', 'pageview', '/outgoing/instagram');">
             <img src="http://images.tothtamas.tt/contact/instagram-thumbnail.png" alt="instagram" title="instagram" width="65" height="65" class="noborder" />
           </a>
         </div>

@@ -94,7 +94,7 @@ ul.meta_tags { margin: 0; padding: 0; }
 /********* SIDEBAR STYLING *********/
 #sidebar ul li { list-style: none; padding: 7px 0; clear: both; }
     #sidebar ul li ul li { line-height: 18px; }
-#sidebar img { border: 1px solid #333; padding: 2px; width: 55px; }
+#sidebar img { border: 1px solid #333; padding: 2px; width: 55px; height: 55px;}
 
 /* Comment Styling */
 #comments { overflow: hidden; }

@@ -854,7 +854,7 @@
 			//Google Analytics code
 			photoTitle = $(options.slides[vars.current_slide].title).filter("h2").first().text();
 			photoTitlePrefix = "allimages/" + photoTitle;
-			_gaq.push(['_trackPageview', photoTitlePrefix]); 
+			ga('send', 'pageview', photoTitlePrefix);
 			
 			return false;
 		
