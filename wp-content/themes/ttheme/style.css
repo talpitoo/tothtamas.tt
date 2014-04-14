@@ -241,6 +241,9 @@ h2.connect { font-size: 3rem; text-align: right; margin-top: 40px;}
 @media screen and (max-width: 767px) {
     .weblog .post_thumbnail img, .single .blog_post img, .related-posts img { width: 100%; }
     .bio .blog_post { margin-right: 10px; }
+	#controls-wrapper { margin:0; width:auto !important; bottom:0; right:0; left:0; z-index:4; padding: 20px; }
+	#prevslide, #nextslide, #play-button { display: none !important; }
+	#slidecaption { margin: 0; }
 }
 
 #infscr-loading {margin: auto; text-align: center;}

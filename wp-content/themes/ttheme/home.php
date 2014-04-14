@@ -20,10 +20,11 @@ get_header(); ?>
 jQuery(function($){
 	$.supersized({
 		slide_interval          :   6000,		// Length between transitions
-		transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition              :   6, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
 		image_protect			:	0,			//Disables image dragging and right click with Javascript
 		image_path				:	"<?php bloginfo('template_url'); ?>/images/",
 		slide_links				:	0,
+		fit_landscape			:	1,
 		slides 					:  	[			//Slideshow Images
 			<?php $query = array('tag' => 'featured', 'posts_per_page' => -1); query_posts($query); while ( have_posts() ) : the_post(); ?>
 			{image : '<?php $image = get_post_meta($post->ID, 'image', $single = true); echo $image; ?>',

@@ -300,6 +300,15 @@
 			$(window).resize(function(){
 	    		base.resizeNow();
 			});
+			
+			base.$el.touchwipe({
+				wipeLeft: function() {
+					base.nextSlide();
+				},
+				wipeRight: function() {
+					base.prevSlide();
+				}
+			});
     		
     	};
         

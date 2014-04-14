@@ -19,7 +19,7 @@ get_header(); ?>
             <a href="mailto:<?php bloginfo('admin_email'); ?>"><?php bloginfo('admin_email'); ?>
             </a>
           </p>
-          <p>+381 64 2419645</p>
+          <p>&nbsp;</p>
           <h2>
             <a href="https://plus.google.com/106827193783314871767?rel=author" class="noborder" onmousedown="javascript: ga('send', 'pageview', '/outgoing/googleplus');">Tamás+</a>
           </h2>

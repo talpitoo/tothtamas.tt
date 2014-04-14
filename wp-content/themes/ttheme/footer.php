@@ -9,7 +9,8 @@
 	wp_enqueue_script('custom', TTBLOG_JS . '/bootstrap-collapse.js');
 	//wp_enqueue_script('custom', TTBLOG_JS . '/custom.js', '', $version);
 	if (is_home()) {
-		wp_enqueue_script('supersized', TTBLOG_JS . '/supersized.3.2.7.min.js', '', $version);
+		wp_enqueue_script('touchwipe', TTBLOG_JS . '/jquery.touchwipe.min.js');
+		wp_enqueue_script('supersized', TTBLOG_JS . '/supersized.3.2.7.js', '', $version);
 		wp_enqueue_script('supersizedtheme', TTBLOG_JS . '/supersized.shutter.min.js');
 	}
 ?>
