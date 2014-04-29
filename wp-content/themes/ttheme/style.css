@@ -48,7 +48,8 @@ ul.nav li a { font-weight: 600; text-transform: uppercase; border: none; font-si
 .related-posts  [class^="span"] {margin-bottom: 20px;}
 
 /* page */
-.btn { font-size: 13px; background-color: #292929; border: none; border-radius: 0; font-family: 'Open Sans', sans-serif; }
+input[type="submit"] { padding: 6px 12px; color: #fff;}
+.btn , input[type="submit"] { font-size: 13px; background-color: #292929; border: none; border-radius: 0; font-family: 'Open Sans', sans-serif; }
 textarea,
 input[type="text"],
 input[type="password"],
@@ -214,7 +215,6 @@ h2.connect { font-size: 3rem; text-align: right; margin-top: 40px;}
     .subscription-manager input[type="text"] { height: 31px; border: none; padding-left: 5px; background: #222; color: #666; margin: 0 5px; }
 #infscr-loading img { border: none; }
 .simplesocialbuttons { margin: 30px auto 50px 0 !important; clear: both !important;}
-.simplesocialbutton.ssb-button-fblike { margin-right: 30px; }
 
 @media screen and (max-width: 979px) {
     .container { margin: 0 auto; }

@@ -68,7 +68,7 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
 			  $post_related = get_post($comment->comment_post_ID );
 			  $title = $post_related->post_title;
 			  echo('<div class="media"><span class="pull-left">');
-				  echo get_avatar( $comment, '50' );
+				  echo get_avatar( $comment, '55' );
 				  echo('</span><div class="media-body"><a href="' . $comment->comment_author_url . '" rel="external nofollow" onmousedown="javascript: ga(&#039;send&#039;, &#039;pageview&#039;, &#039;/outgoing/' . $comment->comment_author . '&#039;);">' . $comment->comment_author . '</a> on <a href="' . get_comment_link( $comment, $args ) . '" rel="nofollow">' . $title . '</a>');
 				  echo ('<br />' . $comment->comment_date . '</div></div>');
 		  endforeach;
