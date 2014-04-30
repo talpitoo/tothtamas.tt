@@ -6,7 +6,7 @@ get_header(); ?>
 
 <div id="mainpage" class="container weblog">
 	<div class="row">
-		<div id="content" class="span9">
+		<div id="content" class="span9" role="main">
       <div class="row">
         <div class="span12">
           <h1>Weblog</h1>
@@ -47,7 +47,7 @@ get_header(); ?>
 		  <?php get_sidebar(); ?>
 		</div>
 	</div>
-	<div id="site-generator">
+	<div id="site-generator" role="contentinfo">
 		<?php include(TEMPLATEPATH.'/poweredby.php'); ?>
 	</div>
 </div>

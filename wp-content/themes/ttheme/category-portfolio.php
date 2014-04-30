@@ -6,7 +6,7 @@ get_header(); ?>
 
 <div id="mainpage" class="container portfolio">
   <div class="row">
-    <div id="content" class="span12">
+    <div id="content" class="span12" role="main">
       <div class="row">
         <div class="span12">
           <h1>Portfolio</h1>
@@ -145,7 +145,7 @@ get_header(); ?>
       </h2>
     </div>
   </div>
-  <div id="site-generator">
+  <div id="site-generator" role="contentinfo">
     <?php include(TEMPLATEPATH.'/poweredby.php'); ?>
   </div>
 </div>

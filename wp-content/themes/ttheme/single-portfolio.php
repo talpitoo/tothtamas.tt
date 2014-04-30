@@ -3,7 +3,7 @@
 <div id="mainpage" class="container single">
 	<div class="row">
 		
-		<div id="content" class="span8">
+		<div id="content" class="span8" role="main">
 			<h1>Single image preview is disabled for now</h1>
 		</div>
 		
@@ -11,7 +11,7 @@
 		  <?php get_sidebar(); ?>
 		</div>
 	</div>
-	<div id="site-generator">
+	<div id="site-generator" role="contentinfo">
 		<?php include(TEMPLATEPATH.'/poweredby.php'); ?>
 	</div>
 </div>

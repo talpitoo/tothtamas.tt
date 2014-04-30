@@ -7,7 +7,7 @@ get_header(); ?>
 
 <div id="mainpage" class="container contact">
   <div class="row">
-    <div id="content" class="span12">
+    <div id="content" class="span12" role="main">
       <div class="row">
         <div class="span9 post_thumbnail">
           <img src="http://images.tothtamas.tt/portfolio/collections/singles/toth-tamas-report-large.jpg" alt="report" title="report" />

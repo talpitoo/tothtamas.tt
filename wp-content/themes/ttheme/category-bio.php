@@ -8,7 +8,7 @@ get_header(); ?>
 	<div class="row">
 		
 		
-		<div id="content" class="span8">
+		<div id="content" role="main" class="span8">
 		 
 			<!-- start post content -->
 			<div class="blog_post">
@@ -64,7 +64,7 @@ get_header(); ?>
 		
 		
 	</div>
-	<div id="site-generator">
+	<div id="site-generator" role="contentinfo">
 		<?php include(TEMPLATEPATH.'/poweredby.php'); ?>
 	</div>
 </div>

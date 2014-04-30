@@ -17,6 +17,16 @@
 	bloginfo( 'name' );
 	?>
 </title>
+<meta name="application-name" content="tothtamas.tt"/>
+<meta name="msapplication-TileColor" content="#000000"/>
+<meta name="msapplication-square70x70logo" content="<?php bloginfo('template_url'); ?>/images/tiny.png"/>
+<meta name="msapplication-square150x150logo" content="<?php bloginfo('template_url'); ?>/images/square.png"/>
+<meta name="msapplication-wide310x150logo" content="<?php bloginfo('template_url'); ?>/images/wide.png"/>
+<meta name="msapplication-square310x310logo" content="<?php bloginfo('template_url'); ?>/images/large.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
 <meta name="description" content="<?php
 	// Add the blog description for the home/front page.
@@ -48,7 +58,7 @@
 
 </script>
 	<!-- Static navbar -->
-	<div class="navbar navbar-static-top">
+	<div class="navbar navbar-static-top" role="navigation">
 			
 			<a href="<?php echo home_url(); ?>" class="navbar-brand noborder"><?php echo get_bloginfo('name'); ?></a>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">

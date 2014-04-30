@@ -35,7 +35,7 @@
       <?php get_sidebar(); ?>
     </div>
 </div>
-  <div id="site-generator">
+  <div id="site-generator" role="contentinfo">
 		<?php include(TEMPLATEPATH.'/poweredby.php'); ?>
 	</div>
 </div>
