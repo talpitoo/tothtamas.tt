@@ -19,7 +19,7 @@ p, blockquote, .blog_post p img { margin-bottom: 10px; }
 .navbar { background: transparent; padding: 0; }
 .navbar-brand,
 .navbar-brand:focus,
-.navbar-brand:hover { float: left; text-indent: -9999px; width: 190px; height: 78px; padding: 0; margin: 0; background: black url(images/logo.png) no-repeat 20px center; }
+.navbar-brand:hover { float: left; text-indent: -9999px; width: 190px; height: 78px; padding: 0; margin: 0; background: black url(images/logo.png) no-repeat center center; background-size: 100%;}
 .navbar .nav { float: none; margin: 0 221px 0 0; background: black; }
     .navbar .nav:before,
     .navbar .nav:after { display: table; content: " "; }
