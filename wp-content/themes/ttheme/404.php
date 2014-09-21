@@ -5,10 +5,10 @@
 
 get_header(); ?>
 
-<div id="mainpage" class="container search">
+<div  class="container search">
 	<div class="row">
 	
-		<div id="content" role="main" class="span8">
+		<div  role="main" class="col-md-8">
 			<div class="results post error404 not-found">
 				<h1>.404</h1>
 				<p>What are you looking for?</p>
@@ -17,7 +17,7 @@ get_header(); ?>
 			</div>
 		</div>
 		
-		<div class="span4">
+		<div class="col-md-4">
 		  <?php get_sidebar(); ?>
 		</div>
 	</div>

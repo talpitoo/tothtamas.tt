@@ -649,7 +649,7 @@ function MRP_get_related_posts_html( $post_id, $hide_unpublished = true, $post_t
 			$output .= "<div class='row'>\n";
 			# Add related posts
 			foreach( $post_type_related_posts as $related_post ) {
-				$output .= "<div class='span4'>";
+				$output .= "<div class='col-md-4'>";
 				if($options['show_thumbnails'] && has_post_thumbnail($related_post->ID)) {
 				    $output .= "<a href=\"".get_permalink($related_post->ID)."\">";
 				    $output .= get_the_post_thumbnail($related_post->ID, 'medium');

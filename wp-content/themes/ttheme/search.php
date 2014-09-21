@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div id="mainpage" class="container search">
+<div  class="container search">
   <div class="row">
-    <div id="content" class="span8">
+    <div  class="col-md-8">
 
       <div class="results">
         <?php 
@@ -50,7 +50,7 @@
         <?php endif; ?>
       </div>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <?php get_sidebar(); ?>
     </div>
   </div>

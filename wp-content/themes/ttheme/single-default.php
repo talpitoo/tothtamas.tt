@@ -1,43 +1,33 @@
 <?php get_header(); ?>
 
-<div id="mainpage" class="container single">
+<div class="container single">
   <div class="row">
-    <div id="content" class="span8">
+    <div class="col-md-8">
       <?php while ( have_posts() ) : the_post() ?>
-        <!-- start post content -->
-        <div class="blog_post">
+        <div class="blog-post">
           <h1>
             <?php the_title(); ?>
           </h1>
-          <!-- post info -->
-          <div class="metaInfo">
+          <div class="meta-info">
             <?php the_time('F, j, Y') ?> / <a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?> comments</a>
           </div>
-          
-          <div class="post_thumbnail">
-            <?php the_post_thumbnail('large'); ?>
-			<?php //the_post_thumbnail('large', array('alt' => the_title() )); ?>
-            <?php
-              $imagecaption = get_post_meta( get_the_ID(), 'caption', true );
-					    if ($imagecaption) echo "<p class='caption'>" . $imagecaption . "</p>";
+          <div class="post-thumbnail">
+            <?php the_post_thumbnail('original');
+                  //the_post_thumbnail('original', array('alt' => the_title() ));
+                  $imagecaption = get_post_meta( get_the_ID(), 'caption', true );
+                  if ($imagecaption) echo "<p class='caption'>" . $imagecaption . "</p>";
 				    ?>
           </div>
           <?php the_content(); ?>
         </div>
-        <!-- end post content -->
-      <?php endwhile; ?>
-	  
-	<?php MRP_show_related_posts() ?>
-	
-      <?php comments_template(); ?>
+      <?php endwhile; 
+            MRP_show_related_posts();
+            comments_template();
+      ?>
     </div>
-    <div class="span4">
-      <?php get_sidebar(); ?>
-    </div>
+  </div>
 </div>
-  <div id="site-generator" role="contentinfo">
-		<?php include(TEMPLATEPATH.'/poweredby.php'); ?>
-	</div>
+<div class="site-generator" role="contentinfo">
+  <?php include(TEMPLATEPATH.'/poweredby.php'); ?>
 </div>
-
 <?php get_footer(); ?>

@@ -4,14 +4,14 @@ Template Name: Weblog
 */
 get_header(); ?>
 
-<div id="mainpage" class="container weblog">
-	<div class="row">
-		<div id="content" class="span9" role="main">
-      <div class="row">
-        <div class="span12">
-          <h1>Weblog</h1>
-        </div>
-      </div>
+<div  class="container weblog">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-uppercase">Weblog</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div  class="col-md-8" role="main">
       <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $query = array(
@@ -21,35 +21,40 @@ get_header(); ?>
         );
         query_posts($query);
         if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <div <?php post_class(); ?>>
         <div class="row">
-					<div class="span4 post_thumbnail">
-						<a href="<?php the_permalink(); ?>">
-						  <?php the_post_thumbnail('medium'); ?>
-						</a>
-					</div>
-    			<div class="span8">
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <div class="metaInfo"><?php the_time('F, j, Y'); ?> / <a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?> comments</a></div>
+          <div class="col-md-4 post-thumbnail">
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail('medium'); ?>
+            </a>
+          </div>
+          <div class="col-md-8">
+            <h2>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+              </a>
+            </h2>
+            <div class="meta-info">
+              <?php the_time('F, j, Y'); ?> / <a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?> comments
+              </a>
+            </div>
             <?php the_excerpt(); ?>
-            <a href="<?php the_permalink(); ?>" class="pull-right btn">Read more</a>
-				  </div>
-			  </div>
-		  </div>
+          </div>
+        </div>
+      </div>
       <?php
         endwhile;
         endif; ?>
       <div class="blog_pagenavi">
-          <?php wp_pagenavi(); ?>
+        <?php wp_pagenavi(); ?>
       </div>
     </div>
-		<div class="span3">
-		  <?php get_sidebar(); ?>
-		</div>
-	</div>
-	<div id="site-generator" role="contentinfo">
-		<?php include(TEMPLATEPATH.'/poweredby.php'); ?>
-	</div>
+    <div class="col-md-4">
+      <?php get_sidebar(); ?>
+    </div>
+  </div>
+</div>
+<div class="site-generator" role="contentinfo">
+  <?php include(TEMPLATEPATH.'/poweredby.php'); ?>
 </div>
 
 <?php wp_reset_query(); ?>

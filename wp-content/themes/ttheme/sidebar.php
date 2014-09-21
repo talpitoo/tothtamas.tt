@@ -10,17 +10,12 @@
 _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.0', null, sprintf( __('Please include a %1$s template in your theme.'), basename(__FILE__) ) );
 ?>
 
-<div id="sidebar" role="complementary">
-  <div class="section">
-	  <h2 class="hide">Sidebar</h2>
-    <?php get_search_form(); ?>
-  </div>
-  
+<div class="sidebar" role="complementary">
   <?php
     if ( in_category('bio') || in_category('alterego')) {
     $related = new WP_Query('category_name=Bio'); ?>
   <div class="section">
-    <h3>Related posts</h3>
+    <h3>Related</h3>
     <?php while ($related->have_posts()) : $related->the_post(); ?>
     <div class="media">
       <a href="<?php the_permalink(); ?>" class="noborder pull-left">
@@ -36,13 +31,12 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
     <?php endwhile; ?>
   </div>
   <?php } ?>
-	
   <div class="section">
-    <h3>Popular posts</h3>
+    <h3>Popular</h3>
     <?php
       $popular = new WP_Query('orderby=comment_count&posts_per_page=5&category_name=Weblog');
       while ($popular->have_posts()) : $popular->the_post(); ?>
-      <div class="media">
+    <div class="media">
       <a href="<?php the_permalink(); ?>" class="noborder pull-left">
         <?php the_post_thumbnail('thumbnail'); ?>
       </a>
@@ -55,10 +49,9 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
     </div>
     <?php endwhile; ?>
   </div>
-  
   <div class="section">
-    <h3>Latest comments</h3>
-	  <?php
+    <h3>Comments</h3>
+    <?php
 		  $args = array(
 			  'status' => 'approve',
 			  'number' => '5'
@@ -68,11 +61,15 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
 			  $post_related = get_post($comment->comment_post_ID );
 			  $title = $post_related->post_title;
 			  echo('<div class="media"><span class="pull-left">');
-				  echo get_avatar( $comment, '55' );
+				  echo get_avatar( $comment, '90' );
 				  echo('</span><div class="media-body"><a href="' . $comment->comment_author_url . '" rel="external nofollow" onmousedown="javascript: ga(&#039;send&#039;, &#039;pageview&#039;, &#039;/outgoing/' . $comment->comment_author . '&#039;);">' . $comment->comment_author . '</a> on <a href="' . get_comment_link( $comment, $args ) . '" rel="nofollow">' . $title . '</a>');
 				  echo ('<br />' . $comment->comment_date . '</div></div>');
 		  endforeach;
 	  ?>
+  </div>
+  <div class="section">
+    <h2 class="sr-only">Sidebar</h2>
+    <?php get_search_form(); ?>
   </div>
 </div>
 

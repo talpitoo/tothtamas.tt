@@ -99,18 +99,21 @@ function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr )
 				$mediumimage = str_replace(".gif", "-large-square.gif", $originalimage);
 				$thumbimage = str_replace(".gif", "-thumbnail.gif", $originalimage);
 			}
-			switch ($size) :			
+			switch ($size) :
+        case "original" :
+					$html = "<img src='" . $originalimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
+					break;
 				case "large" :
-					$html = "<img src='" . $largeimage . "' class='front' alt='" . $posttitle . "'/></a>";
+					$html = "<img src='" . $largeimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
 					break;
 				case "medium" :
-					$html = "<img src='" . $mediumimage . "' class='front' alt='" . $posttitle . "'/></a>";
+					$html = "<img src='" . $mediumimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
 					break;
 				case "thumbnail" :
-					$html = "<img src='" . $thumbimage . "' class='front' alt='" . $posttitle . "'/></a>";
+					$html = "<img src='" . $thumbimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
 					break;
 				default :
-					$html = "<img src='" . $thumbimage . "' class='front' />";
+					$html = "<img src='" . $thumbimage . "' class='img-responsive' />";
 			endswitch;			
 		}
 		else {
