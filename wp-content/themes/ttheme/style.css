@@ -23,6 +23,8 @@ h6 { font-weight: 300; }
 .portfolio h1 { margin-bottom: 40px; }
 .portfolio h2 { margin-top: 0; }
 blockquote { padding-left: 36px; border: none; background: url(images/blockquote.png) no-repeat 0 0; display: block; margin: 0; font-style: italic; }
+.blog-post ul, .blog-post ol { margin-left: 40px; }
+.noborder { border: none !important; }
 #infscr-loading { margin: auto; text-align: center; }
 #infscr-loading img { border: none; }
 
@@ -71,7 +73,7 @@ label { font-weight: normal; color: #aaa; margin-left: 10px; }
 
 /* posts */
 .meta-info { margin: 0 0 30px; text-transform: uppercase; font-size: 11px; line-height: 17px; }
-.blog-post img { margin-top: 30px; }
+.blog-post .img-responsive { margin-top: 30px; min-height: 498px; }
 .blog-post .post-thumbnail img, .caption { margin-bottom: 30px; }
 .category-weblog .post,
 .category-bio .post { margin-top: 40px; }
@@ -84,7 +86,7 @@ label { font-weight: normal; color: #aaa; margin-left: 10px; }
 
 
 /* sidebar */
-.sidebar { padding: 30px; background-color: #151515; }
+.sidebar { padding: 30px; background-color: #151515; margin-bottom: 40px; }
 .sidebar h3 { margin-top: 0; }
 .sidebar .media { margin-bottom: 30px; }
 .sidebar .section { margin-bottom: 50px; }
@@ -151,6 +153,7 @@ h3#comments { margin-top: 40px; }
 .weblog img,
 .portfolio ul li img { border: 1px solid #2e2e2e; }
 .contact .post-thumbnail img { margin-bottom: 40px; width: 100%; }
+.contact .col-md-8 > .img-responsive { margin-top: 20px; }
 .portfolio img { margin-bottom: 20px; width: 100%; }
 h2.connect { font-size: 30px; text-align: right; margin-top: 50px; }
 h2.connect small { font-size: 14px; }
@@ -184,9 +187,17 @@ h2.connect small { font-size: 14px; }
 }
 
 @media screen and (max-width: 767px) {
+    h1 { margin-top: 10px; }
+    label { display: block; margin: 0; }
+    textarea,
+    input[type="text"],
+    input[type="password"] { width: 100%; }
     .weblog .post-thumbnail img,
     .single .blog-post img,
     .related-posts img { width: 100%; }
+    .blog-post .img-responsive { min-height: 0; }
+    [class*="col-"] { padding-left: 30px; padding-right: 30px; }
+    [class*="col-"] [class*="col-"] { padding-left: 15px; padding-right: 15px; }
     #controls-wrapper { margin: 0; width: auto !important; bottom: 0; right: 0; left: 0; z-index: 4; padding: 30px; }
     #prevslide,
     #nextslide,

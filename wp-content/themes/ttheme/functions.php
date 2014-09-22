@@ -101,7 +101,7 @@ function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr )
 			}
 			switch ($size) :
         case "original" :
-					$html = "<img src='" . $originalimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
+					$html = "<img src='" . $originalimage . "?ver21092014' class='img-responsive' alt='" . $posttitle . "'/></a>";
 					break;
 				case "large" :
 					$html = "<img src='" . $largeimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
@@ -110,7 +110,7 @@ function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr )
 					$html = "<img src='" . $mediumimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
 					break;
 				case "thumbnail" :
-					$html = "<img src='" . $thumbimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
+					$html = "<img src='" . $thumbimage . "' alt='" . $posttitle . "'/></a>";
 					break;
 				default :
 					$html = "<img src='" . $thumbimage . "' class='img-responsive' />";
