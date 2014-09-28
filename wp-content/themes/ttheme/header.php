@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        <?php global $page, $paged; $version="?ver21092014" ; wp_title( '|', true, 'right' ); ?>
+        <?php global $page, $paged; $version="?ver21092014" ; wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?>
     </title>
     <meta name="description" content="<?php $site_description = get_bloginfo( 'description', 'display' ); echo " $site_description "; ?>" />
     <meta name="author" content="@talpitoo">
