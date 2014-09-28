@@ -11,7 +11,7 @@ get_header(); ?>
     </div>
   </div>
   <div class="row">
-    <div  class="col-md-8" role="main">
+    <div class="col-md-8 infinity-scroll-content" role="main">
       <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $query = array(

@@ -72,7 +72,7 @@ class monsterid{
 			$monsterID_array=get_option('monsterID');
 			if (!isset($monsterID_array['size'])||!isset($monsterID_array['backb'])){
 				//Set Default Values Here
-				$default_array=array('size'=>65,'backr'=>array(220,255),'backg'=>array(220,255),'backb'=>array(220,255),'legs'=>0,'autoadd'=>1,'gravatar'=>0,'artistic'=>0,'greyscale'=>1,'css'=>DEFAULT_MONSTERID_CSS);
+				$default_array=array('size'=>90,'backr'=>array(220,255),'backg'=>array(220,255),'backb'=>array(220,255),'legs'=>0,'autoadd'=>1,'gravatar'=>0,'artistic'=>0,'greyscale'=>1,'css'=>DEFAULT_MONSTERID_CSS);
 				add_option('monsterID',$default_array,'Options used by MonsterID',false);
 				$monsterID_array=$default_array;
 			}
@@ -455,7 +455,7 @@ function monsterid_subpanel() {
 	<p>Set options here:</p>
 	<form method="post" action="options-general.php?page=wp_monsterid.php">
 		<ul style="list-style-type: none">
-	<li><strong>MonsterID Size</strong> in Pixels (Default: 65):<br /> <input type="text" name="monstersize" value="<?php echo $monsterID_options['size'];?>"/></li>
+	<li><strong>MonsterID Size</strong> in Pixels (Default: 90):<br /> <input type="text" name="monstersize" value="<?php echo $monsterID_options['size'];?>"/></li>
 	<li><strong>Background Colors</strong> (enter single value or range Default: 220-255,220-255,220-255):<br/>
 	Enter 0-0,0-0,0-0 for transparent background (but note that transparent background may turn grey in IE6):<br/>
 	R:<input type="text" name="backr" value="<?php echo implode($monsterID_options['backr'],'-');?>"/>G:<input type="text" name="backg" value="<?php echo implode($monsterID_options['backg'],'-');?>"/>B:<input type="text" name="backb" value="<?php echo implode($monsterID_options['backb'],'-');?>"/></li>
