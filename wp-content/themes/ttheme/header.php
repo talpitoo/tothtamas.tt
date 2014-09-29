@@ -49,15 +49,27 @@
     <link rel="icon" sizes="32x32" href="<?php bloginfo('template_url'); ?>/images/cover32x32.png" type="image/png">
     <link rel="shortcut icon" sizes="16x16" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
 
+	<?php 
+	/* Always have wp_head() just before the closing </head>
+	 * tag of your theme, or you will break many plugins, which
+	 * generally use this hook to add elements to <head> such
+	 * as styles, scripts, and meta tags.
+	 */
+	 wp_deregister_script( 'jquery' );
+	 wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' );
+	 wp_enqueue_script( 'jquery' );
+	 wp_head();
+	 ?>
+
     <!-- inline critical css -->
     <style>
     </style>
     <!-- development css -->
-    <!-- <link href="<?php bloginfo('template_url'); ?>/css/bootstrap-customized.css<?php echo $version ?>" rel="stylesheet" /> -->
-    <!-- <link href="<?php bloginfo('template_url'); ?>/css/supersized.css<?php echo $version ?>" rel="stylesheet" /> -->
+    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css<?php echo $version ?>" rel="stylesheet" />
+	<link href="<?php bloginfo('template_url'); ?>/css/ttheme.css<?php echo $version ?>" rel="stylesheet" />
     <!-- <link href="<?php bloginfo('stylesheet_url'); ?><?php echo $version ?>" rel="stylesheet" /> -->
     <!-- production css, merge&minify the above css -->
-    <link href="<?php bloginfo('template_url'); ?>/css/minify.css<?php echo $version ?>" rel="stylesheet" />
+    <!-- <link href="<?php bloginfo('template_url'); ?>/css/minify.css<?php echo $version ?>" rel="stylesheet" /> -->
     <noscript>
         <link href="<?php bloginfo('template_url'); ?>/css/minify.css<?php echo $version ?>" rel="stylesheet" />
     </noscript>
