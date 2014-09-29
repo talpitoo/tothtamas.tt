@@ -16,7 +16,7 @@ h6 { font-weight: 300; }
 .search h1,
 .contact h1,
 .portfolio h1 { margin-bottom: 40px; }
-blockquote { padding-left: 36px; border: none; background: url(../images/blockquote.png) no-repeat 0 0; margin: 0; font-style: italic; }
+blockquote { padding-left: 36px; border: none; background: url(../images/blockquote.png?ver=29092014b) no-repeat 0 0; margin: 0; font-style: italic; }
 .blog-post ul, .blog-post ol { margin-left: 40px; }
 .noborder { border: none !important; }
 
@@ -26,7 +26,7 @@ blockquote { padding-left: 36px; border: none; background: url(../images/blockqu
 .navbar { background: transparent; border: none; }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:hover { float: left; text-indent: -9999px; width: 190px; height: 78px; padding: 0; margin: 0; background: url(../images/logo.png) no-repeat center center; background-color: black; background-size: 100%; }
+.navbar-default .navbar-brand:hover { float: left; text-indent: -9999px; width: 190px; height: 78px; padding: 0; margin: 0; background: url(../images/logo.png?ver=29092014b) no-repeat center center; background-color: black; background-size: 100%; }
 .navbar .nav { float: none; margin: 0 221px 0 0; background: black; }
 .navbar .nav:before,
 .navbar .nav:after { display: table; content: " "; }
@@ -38,10 +38,10 @@ blockquote { padding-left: 36px; border: none; background: url(../images/blockqu
 .navbar-toggle:hover .icon-bar,
 .navbar-toggle:focus .icon-bar { background-color: #333; }
 .navbar-collapse { border: none; box-shadow: none; }
-.navbar-collapse.collapse { height: auto; overflow: hidden !important; background: transparent url(../images/perforation-horizontal.png) no-repeat right bottom; }
+.navbar-collapse.collapse { height: auto; overflow: hidden !important; background: transparent url(../images/perforation-horizontal.png?ver=29092014b) no-repeat right bottom; }
 .bloginfo-description,
 .bloginfo-description a { font-size: 0px; line-height: 0px; color: #000; margin: 0; border: none; }
-.triangle { background: transparent url(../images/triangle-horizontal.png) no-repeat left bottom; height: 78px; width: 30px; float: left; }
+.triangle { background: transparent url(../images/triangle-horizontal.png?ver=29092014b) no-repeat left bottom; height: 78px; width: 30px; float: left; }
 .nav li a { text-transform: uppercase; font-size: 19px; padding: 0 15px; height: 78px; line-height: 78px; }
 
 
@@ -49,7 +49,7 @@ blockquote { padding-left: 36px; border: none; background: url(../images/blockqu
 /* home carousel */
 .carousel,
 .carousel-inner,
-.carousel-inner > .item { position: absolute; width: 100%; top: 0; bottom: 0; background-position: center center; background-size: 100% auto; background-repeat: no-repeat; transform: translateZ(0deg); }
+.carousel-inner > .item { position: absolute; width: 100%; top: 0; bottom: 0; background-position: center center; background-size: 115% auto; background-repeat: no-repeat; transform: translateZ(0deg); }
 .carousel-control { display: block; }
 .carousel-control span { font-size: 200px; position: absolute; top: 50%; margin-top: -143px; }
 .carousel-control.left span { left: 50px; }
@@ -180,7 +180,6 @@ label { font-weight: normal; color: #aaa; margin-left: 10px; }
 @media screen and (max-width: 767px) {
     .navbar .nav li a { padding: 10px 20px !important; }
     h1 { margin-top: 10px; }
-    .carousel-inner > .item { background-position: center 78px; }
     .carousel-control { display: none; }
     .carousel-caption { width: 100%; left: 0; bottom: 0; }
     .carousel-indicators { bottom: 10px; }
@@ -195,6 +194,7 @@ label { font-weight: normal; color: #aaa; margin-left: 10px; }
 }
 
 @media screen and (max-width: 480px) {
+    .carousel-inner > .item { background-position: center 78px; }
     .carousel-indicators { display: none; }
     .carousel-caption { padding-bottom: 30px; }
 }

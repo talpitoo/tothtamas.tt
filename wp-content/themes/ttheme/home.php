@@ -42,7 +42,7 @@ get_header(); ?>
           }
           $image = get_post_meta($post->ID, 'image', $single = true);
         ?>
-      <div class="<?php echo $itemClass ?>" style="background-image: url(<?php echo $image; ?>);">
+    <div class="<?php echo $itemClass ?>" style="background-image: url(<?php echo $image . "?ver=29092014b"; ?>);">
         <div class="carousel-caption">
           <h2>
             <?php the_title(); ?>

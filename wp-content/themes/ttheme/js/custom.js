@@ -15,14 +15,14 @@ WebFontConfig = {
 
 
 // home carousel
-if (typeof swiperight == 'function') {
+if ($.mobile) {
     $("#home-carousel").swiperight(function () {
         $(this).carousel('prev');
     });
     $("#home-carousel").swipeleft(function () {
         $(this).carousel('next');
     });
-}
+};
 
 
 
