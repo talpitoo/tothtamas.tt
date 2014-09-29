@@ -101,7 +101,7 @@ function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr )
 			}
 			switch ($size) :
         case "original" :
-					$html = "<img src='" . $originalimage . "?ver=28092014' class='img-responsive' alt='" . $posttitle . "'/></a>";
+					$html = "<img src='" . $originalimage . "?ver=29092014' class='img-responsive' alt='" . $posttitle . "'/></a>";
 					break;
 				case "large" :
 					$html = "<img src='" . $largeimage . "' class='img-responsive' alt='" . $posttitle . "'/></a>";
@@ -149,10 +149,26 @@ function my_column_action( $column ) {
 }
 
 
+
 // consistent avatar size
 add_filter('get_avatar','my_wp_list_comments',5,4);
 function my_wp_list_comments($avatar, $id_or_email, $size, $default) {
 	return $avatar;
 }
+
+
+
+// deferred scipt loading
+// http://stackoverflow.com/questions/18944027/how-do-i-defer-or-async-this-wordpress-javascript-snippet-to-load-lastly-for-fas
+function add_defer_forscript($url)
+{
+    if (strpos($url, '#deferload')===false)
+        return $url;
+    else if (is_admin())
+        return str_replace('#deferload', '', $url);
+    else
+        return str_replace('#deferload', '', $url)."' defer='defer"; 
+}
+add_filter('clean_url', 'add_defer_forscript', 11, 1);
 
 ?>

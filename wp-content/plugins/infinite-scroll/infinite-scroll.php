@@ -120,7 +120,7 @@ class Infinite_Scroll {
 
 		$suffix = ( WP_DEBUG ) ? '.dev' : '';
 
-		$file = "/js/front-end/jquery.infinitescroll{$suffix}.js";
+		$file = "/js/front-end/jquery.infinitescroll{$suffix}.js#deferload";
 		wp_enqueue_script( $this->slug, plugins_url( $file, __FILE__ ), array( 'jquery' ), $this->version, true );
 
 		$options = apply_filters( $this->prefix . 'js_options', $this->options->get_options() );
@@ -134,7 +134,7 @@ class Infinite_Scroll {
 		if ( !array_key_exists( $options['behavior'], $this->behaviors ) )
 		  return _doing_it_wrong( 'Infinite Scroll behavior', "Behavior {$options['behavior']} not found", $this->version );
 		
-		$src = 'behaviors/' . $this->behaviors[ $options['behavior'] ]['src'] . '.js';
+		$src = 'behaviors/' . $this->behaviors[ $options['behavior'] ]['src'] . '.js#deferload';
 		wp_enqueue_script( $this->slug . "-behavior", plugins_url( $src, __FILE__ ), array( "jquery", $this->slug ), $this->version, true );
 
 	}
