@@ -99,6 +99,11 @@ function my_post_image_html( $html, $post_id, $post_thumbnail_id, $size, $attr )
 				$mediumimage = str_replace(".gif", "-large-square.gif", $originalimage);
 				$thumbimage = str_replace(".gif", "-thumbnail.gif", $originalimage);
 			}
+			if (endsWith($originalimage, '.png')) {
+				$largeimage = str_replace(".png", "-large.png", $originalimage);
+				$mediumimage = str_replace(".png", "-large-square.png", $originalimage);
+				$thumbimage = str_replace(".png", "-thumbnail.png", $originalimage);
+			}
 			switch ($size) :
         case "original" :
 					$html = "<img src='" . $originalimage . "?ver=29092014b' class='img-responsive' alt='" . $posttitle . "'/></a>";
