@@ -8,19 +8,3 @@ Header set Cache-Control "max-age=604800, public"
 <Files *.html>
 SetOutputFilter DEFLATE
 </Files>
-
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
-# END WordPress
-
-# enable keep alive
-<ifModule mod_headers.c>
-Header set Connection keep-alive
-</ifModule>
