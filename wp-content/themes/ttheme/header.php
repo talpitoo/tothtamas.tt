@@ -10,7 +10,7 @@
     <meta name="author" content="@talpitoo">
     <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 
-    <meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>" />
+    <!-- <meta property="og:title" content="<?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?>" />
     <meta property="og:description" content="<?php $site_description = get_bloginfo( 'description', 'display' ); echo " $site_description "; ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://tothtamas.tt/" />
@@ -21,8 +21,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@talpitoo">
     <meta name="twitter:creator" content="@talpitoo">
-    <meta name="twitter:title" content="<?php wp_title( '|', true, 'right' ); ?>">
-    <meta name="twitter:description" content="<?php $site_description = get_bloginfo( 'description', 'display' ); echo " $site_description "; ?>">
+    <meta name="twitter:title" content="<?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?>">
+    <meta name="twitter:description" content="<?php $site_description = get_bloginfo( 'description', 'display' ); echo " $site_description "; ?>"> -->
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
