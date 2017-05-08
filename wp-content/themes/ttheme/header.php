@@ -8,7 +8,11 @@
     </title>
     <meta name="description" content="<?php $site_description = get_bloginfo( 'description', 'display' ); echo " $site_description "; ?>" />
     <meta name="author" content="@talpitoo">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    <meta name="viewport" content="width=device-width; initial-scale=1;" />
+    <?php if(is_single( array( '1993') ) || is_page( array( 'rear-window', '1993') ) ): $noindex=true; endif; ?>
+    <?php if($noindex): ?>
+      <meta name="robots" content="noindex,nofollow">
+    <?php endif; ?>
 
     <!-- <meta property="og:title" content="<?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?>" />
     <meta property="og:description" content="<?php $site_description = get_bloginfo( 'description', 'display' ); echo " $site_description "; ?>" />
@@ -49,7 +53,7 @@
     <link rel="icon" sizes="32x32" href="<?php bloginfo('template_url'); ?>/images/cover32x32.png" type="image/png">
     <link rel="shortcut icon" sizes="16x16" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
 
-	<?php 
+	<?php
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
 	 * generally use this hook to add elements to <head> such
@@ -69,7 +73,7 @@
     <!-- development css -->
     <!-- <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css<?php echo $version ?>" rel="stylesheet" /> -->
 	<!-- <link href="<?php bloginfo('template_url'); ?>/css/ttheme.css<?php echo $version ?>" rel="stylesheet" /> -->
-        
+
 	<noscript>
         <link href="<?php bloginfo('template_url'); ?>/css/minify.css<?php echo $version ?>" rel="stylesheet" />
     </noscript>

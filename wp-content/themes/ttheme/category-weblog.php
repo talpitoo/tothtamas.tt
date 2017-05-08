@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 Template Name: Weblog
 */
@@ -24,17 +24,21 @@ get_header(); ?>
       <div <?php post_class(); ?>>
         <div class="row">
           <div class="col-md-4 post-thumbnail">
-            <a href="<?php the_permalink(); ?>">
+            <?php
+              $post_id = get_the_ID();
+              if($post_id==1993): $noindex=true; endif;
+            ?>
+            <a href="<?php the_permalink(); ?>" <?php if($noindex): echo "rel='nofollow'"; endif; ?>>
               <?php the_post_thumbnail('medium'); ?>
             </a>
           </div>
           <div class="col-md-8">
             <h2>
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+              <a href="<?php the_permalink(); ?>" <?php if($noindex): echo "rel='nofollow'"; endif; ?>><?php the_title(); ?>
               </a>
             </h2>
             <div class="meta-info">
-              <?php the_time('F, j, Y'); ?> / <a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?> comments
+              <?php the_time('F, j, Y'); ?> / <a href="<?php comments_link(); ?>" <?php if($noindex): echo "rel='nofollow'"; endif; ?>><?php comments_number('0','1','%'); ?> comments
               </a>
             </div>
             <?php the_excerpt(); ?>

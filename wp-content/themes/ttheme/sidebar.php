@@ -17,11 +17,15 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
       $popular = new WP_Query('orderby=comment_count&posts_per_page=5&category_name=Weblog');
       while ($popular->have_posts()) : $popular->the_post(); ?>
     <div class="media">
-      <a href="<?php the_permalink(); ?>" class="noborder pull-left">
+      <?php
+        $post_id = get_the_ID();
+        if($post_id==1993): $noindex=true; endif;
+      ?>
+      <a href="<?php the_permalink(); ?>" <?php if($noindex): echo "rel='nofollow'"; endif; ?> class="noborder pull-left">
         <?php the_post_thumbnail('thumbnail'); ?>
       </a>
       <div class="media-body">
-        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?> (<?php comments_number('0','1','%'); ?>)
+        <a href="<?php the_permalink() ?>" <?php if($noindex): echo "rel='nofollow'"; endif; ?> title="<?php the_title_attribute(); ?>"><?php the_title(); ?> (<?php comments_number('0','1','%'); ?>)
         </a>
         <br />
         <?php the_time('Y-m-d'); ?>
@@ -52,4 +56,3 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
     <?php get_search_form(); ?>
   </div>
 </div>
-
