@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 Template Name: Contact
 */
@@ -22,12 +22,39 @@ get_header(); ?>
           </a>
         </p>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <h2>
+              <br>
               <a href="http://expect.agency/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/expect');" title="Expect" class="">Expect</a>
             </h2>
             <a href="http://expect.agency/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/expect');">
-              <img src="http://images.tothtamas.tt/contact/expect-thumbnail.png" alt="Expect" title="Expect" class="img-responsive noborder" />
+              <img src="http://images.tothtamas.tt/contact/expect-medium.png" alt="Expect" title="Expect" class="img-responsive noborder" />
+            </a>
+          </div>
+          <div class="col-md-6">
+            <h2>
+              <a href="http://testedonhumans.xyz/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/testedonhumans');" title="Tested on humans" class="">Tested on humans</a>
+            </h2>
+            <a href="http://testedonhumans.xyz/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/testedonhumans');">
+              <img src="http://images.tothtamas.tt/contact/testedonhumans-medium.png" alt="Tested on humans" title="Tested on humans" class="img-responsive noborder" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>
+              <a href="http://lapetitevackor.tumblr.com/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/lapetitevackor');" title="la petite Vackor" class="">la petite Vackor</a>
+            </h2>
+            <a href="http://lapetitevackor.tumblr.com/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/lapetitevackor');">
+              <img src="http://images.tothtamas.tt/contact/lapetitevackor-medium.png" alt="la petite Vackor" title="la petite Vackor" class="img-responsive noborder" />
+            </a>
+          </div>
+          <div class="col-md-6">
+            <h2>
+              <a href="http://dreamingsheep.net/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/dreamingsheep');" title="dreamingsheep" class="">dreaming<wbr>sheep</a>
+            </h2>
+            <a href="http://dreamingsheep.net/" onmousedown="javascript: ga('send', 'pageview', '/outgoing/dreamingsheep');">
+              <img src="http://images.tothtamas.tt/contact/dreamingsheep-medium.png" alt="dreamingsheep" title="dreamingsheep" class="img-responsive noborder" />
             </a>
           </div>
         </div>
