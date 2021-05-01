@@ -198,3 +198,33 @@ label { font-weight: normal; color: #aaa; margin-left: 10px; }
     .carousel-indicators { display: none; }
     .carousel-caption { padding-bottom: 30px; }
 }
+
+/* archive */
+.category-bio.category-3:before,
+.postid-2001:before,
+.postid-27:before,
+.postid-29:before,
+.postid-25:before,
+.postid-23:before,
+.postid-19:before,
+.postid-17:before,
+.postid-15:before,
+.postid-11:before,
+.postid-9:before,
+.postid-7:before,
+.postid-5:before,
+.postid-21:before,
+.postid-1301:before,
+.postid-1299:before,
+.postid-1297:before,
+.postid-1295:before,
+.postid-1292:before,
+.postid-1289:before,
+.postid-1287:before,
+.category-portfolio.category-6:before {
+  content: 'You are looking at archived content.';
+  background-color: #f21170;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}

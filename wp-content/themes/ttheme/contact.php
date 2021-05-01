@@ -61,10 +61,10 @@ get_header(); ?>
         <div class="row">
           <div class="col-md-4">
             <h2>
-              <a href="https://plus.google.com/106827193783314871767?rel=author" onmousedown="javascript: ga('send', 'pageview', '/outgoing/googleplus');" title="Tamás+" class="">Tamás+</a>
+              <a href="https://www.facebook.com/talpitoo" onmousedown="javascript: ga('send', 'pageview', '/outgoing/facebook');" title="Facebook" class="">Facebook</a>
             </h2>
-            <a href="https://plus.google.com/106827193783314871767?rel=author" onmousedown="javascript: ga('send', 'pageview', '/outgoing/googleplus');">
-              <img src="http://images.tothtamas.tt/contact/google-plus-thumbnail.png" alt="Google+" title="Google+" class="img-responsive noborder" />
+            <a href="https://www.facebook.com/talpitoo" onmousedown="javascript: ga('send', 'pageview', '/outgoing/facebook');">
+              <img src="http://images.tothtamas.tt/contact/facebook-thumbnail.png" alt="Facebook" title="Facebook" class="img-responsive noborder" />
             </a>
           </div>
           <div class="col-md-4">
@@ -81,16 +81,6 @@ get_header(); ?>
             </h2>
             <a href="http://instagram.com/talpitoo" onmousedown="javascript: ga('send', 'pageview', '/outgoing/instagram');">
               <img src="http://images.tothtamas.tt/contact/instagram-thumbnail.png" alt="instagram" title="instagram" class="img-responsive noborder" />
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <h2>
-              <a href="https://www.facebook.com/talpitoo" onmousedown="javascript: ga('send', 'pageview', '/outgoing/facebook');" title="Facebook" class="">Facebook</a>
-            </h2>
-            <a href="https://www.facebook.com/talpitoo" onmousedown="javascript: ga('send', 'pageview', '/outgoing/facebook');">
-              <img src="http://images.tothtamas.tt/contact/facebook-thumbnail.png" alt="Facebook" title="Facebook" class="img-responsive noborder" />
             </a>
           </div>
         </div>
